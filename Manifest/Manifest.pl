@@ -1,7 +1,7 @@
 :- bundle(alldocs).
 % General Ciao documentation
 % (manuals and tutorials covering main bundles)
-version('1.15.0').
+version('1.16.0-alpha.1').
 depends([core, contrib, lpdoc, ciao_emacs]). % ciaopp?
 %
 alias_paths([

@@ -229,7 +229,9 @@ docstr_extendprolog :=
 	 'bf/bf_doc',
 	 'id/id_doc',
 	 'clpq/clpq_doc',
-	 'clpr/clpr_doc'
+	 'clpr/clpr_doc',
+	 'clpfd/clpfd_doc' -[
+	   'clpfd/clpfd_rt']
 	 % 'fuzzy/fuzzy_doc', (moved to its own repo)
          ].
 
@@ -370,9 +372,7 @@ docstr_contrib :=
 	   'dht/dht_misc'
          ],
          %
-	 'clpfd/clpfd_doc' -[
-	   'clpfd/clpfd_rt'],
-	 'fd/fd_doc',
+	 % 'fd/fd_doc', % (Deprecated?)
 	 'gendot/gendot',
 	 'gnuplot/gnuplot',
 	 'lazy/lazy_doc',

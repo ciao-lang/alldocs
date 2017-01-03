@@ -145,9 +145,10 @@ docstr_annotatedprolog :=
 %	'metatypes'
 %	'meta_props'
 
+% 'benchmarks/ecrc',
+	 
 docstr_miscprolog :=
-	['benchmarks/ecrc',
-	 'getopts',
+	['getopts',
 	 'llists',
 	 'streams',
 	 'dict',

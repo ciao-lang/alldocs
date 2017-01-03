@@ -214,12 +214,12 @@ docstr_extendprolog :=
 	 'hiordlib',
 	 'argnames/argnames_doc',
 	 'fsyntax/fsyntax_doc',
-	 'global',
 	 'andorra/andorra_doc',
          %
 	 'det_hook/det_hook_doc',
 	 'det_hook/det_hook_rt',
          %
+	 'global_vars',
 	 'odd',
 	 'mutables',
 	 'block/block_doc',

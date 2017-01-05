@@ -209,26 +209,34 @@ docstr_miscprolog :=
 % TODO: Document: those libraries may change the 'theory'
 docstr_extendprolog :=
 	['pure/pure_doc',
-	 'indexer/indexer_doc',
+	 % Higher order
 	 'hiord_rt', % engine
 	 'hiordlib',
+	 % Records and functional notation
 	 'argnames/argnames_doc',
 	 'fsyntax/fsyntax_doc',
-	 'andorra/andorra_doc',
-         %
-	 'det_hook/det_hook_doc',
-	 'det_hook/det_hook_rt',
-         %
+	 'lazy/lazy_doc',
+         % Mutables and implicits (globals)
 	 'global_vars',
-	 'odd',
 	 'mutables',
+	 %
+	 'odd', % setarg/3, undo/1 % TODO: rename pred
+	 % Control and evaluation strategy
+	 'indexer/indexer_doc',
 	 'block/block_doc',
 	 'freeze/freeze',
 	 'when/when',
+	 'andorra/andorra_doc',
+	 'det_hook/det_hook_doc',
+	 'det_hook/det_hook_rt',
+	 % TODO: undo/1 should be here
+	 % Concurrency
 	 'actmods/actmods_doc',
 	 'agent/agent_doc',
+	 %
 	 'bf/bf_doc',
 	 'id/id_doc',
+	 % Constrain domains
 	 'clpq/clpq_doc',
 	 'clpr/clpr_doc',
 	 'clpfd/clpfd_doc' -[
@@ -376,7 +384,6 @@ docstr_contrib :=
 	 % 'fd/fd_doc', % (Deprecated?)
 	 'gendot/gendot',
 	 'gnuplot/gnuplot',
-	 'lazy/lazy_doc',
          % 'modtester',
 	 'mycin/mycin_doc',
 	 'profiler/profiler_doc',

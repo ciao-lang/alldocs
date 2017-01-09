@@ -2,7 +2,13 @@
 % General Ciao documentation
 % (manuals and tutorials covering main bundles)
 version('1.16.0-alpha.1').
-depends([core, contrib, lpdoc, ciao_emacs]). % ciaopp?
+depends([
+  core,
+  contrib,
+  lpdoc,
+  ciaotest, % unit tests, etc.
+  ciao_emacs
+]). % ciaopp?
 %
 alias_paths([
   ciao_docsrc = '.'

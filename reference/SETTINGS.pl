@@ -390,10 +390,11 @@ docstr_contrib :=
          %
 	 'regexp/regexp_doc'-['regexp/regexp_code'],
 	 %
-	 'tester/tester',
-	 % 'time_analyzer/time_analyzer',
-	 'xdr_handle/xdr_handle',
-	 'xml_path/doc/xml_path_doc'].
+	 'tester/tester'].
+
+% (xml_extra bundle)
+% 'xdr_handle/xdr_handle',
+% 'xml_path/doc/xml_path_doc'
 
 docstr_utilscontrib :=
 	['cleandirs'].

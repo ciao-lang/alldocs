@@ -315,9 +315,6 @@ docstr_adts :=
 	 
 docstr_contrib :=
 	['ddlist/ddlist',
-%        'debugpred',
-	 %
-	 'zeromq/zeromq',
 	 %
          'dht/dht_doc'-[
 	   'dht/dht_client',
@@ -336,15 +333,12 @@ docstr_contrib :=
 	   'dht/dht_misc'
          ],
          %
-	 % 'fd/fd_doc', % (Deprecated?)
 	 'gendot/gendot',
 	 'gnuplot/gnuplot',
-         % 'modtester',
 	 'mycin/mycin_doc',
          %
-	 'regexp/regexp_doc'-['regexp/regexp_code'],
-	 %
-	 'tester/tester'].
+	 'regexp/regexp_doc'-['regexp/regexp_code']
+        ].
 
 docstr_utilscontrib :=
 	['cleandirs'].

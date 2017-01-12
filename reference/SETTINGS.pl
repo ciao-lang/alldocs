@@ -131,14 +131,7 @@ docstr_annotatedprolog :=
 	 %
 	 'isomodes/isomodes_doc',
 	 'basicmodes/basicmodes_doc',
-	 'rtchecks/rtchecks_doc',
-	 'unittest'-
-               ['unittest/unittest_props',
-		'unittestdecls_doc',
-		% 'unittest/unittest_utils',
-		'unittest/unittest_statistics',
-		'unittest/unittest_examples'
-	       ]
+	 'rtchecks/rtchecks_doc'
 	].
 
 % 'fdtypes'
@@ -348,7 +341,6 @@ docstr_contrib :=
 	 'gnuplot/gnuplot',
          % 'modtester',
 	 'mycin/mycin_doc',
-	 'profiler/profiler_doc',
          %
 	 'regexp/regexp_doc'-['regexp/regexp_code'],
 	 %

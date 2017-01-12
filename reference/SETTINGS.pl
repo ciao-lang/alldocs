@@ -185,6 +185,7 @@ docstr_miscprolog :=
 	 %
 	 'archive_files',
 	 %
+	 'regexp/regexp_doc'-['regexp/regexp_code'],
 	 'text_template'
 	 ].
 
@@ -335,9 +336,7 @@ docstr_contrib :=
          %
 	 'gendot/gendot',
 	 'gnuplot/gnuplot',
-	 'mycin/mycin_doc',
-         %
-	 'regexp/regexp_doc'-['regexp/regexp_code']
+	 'mycin/mycin_doc'
         ].
 
 docstr_utilscontrib :=

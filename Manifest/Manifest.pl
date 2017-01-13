@@ -6,7 +6,7 @@ depends([
   core,
   contrib,
   lpdoc,
-  ciaotest, % unit tests, etc.
+  ciaodbg, % debugger, profiler, testing, etc.
   ciao_emacs
 ]). % ciaopp?
 %

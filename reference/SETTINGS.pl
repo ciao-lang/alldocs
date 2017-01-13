@@ -259,7 +259,8 @@ docstr_interfaces :=
 	   'pillow/html',
 	   'pillow/http',
 	   'pillow/pillow_types',
-	   'pillow/json'
+	   'pillow/json',
+	   'pillow/color_space'
          ],
          %
 	 'persdb/persdb_rt'-[

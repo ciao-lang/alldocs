@@ -335,8 +335,7 @@ docstr_contrib :=
          ],
          %
 	 'gendot/gendot',
-	 'gnuplot/gnuplot',
-	 'mycin/mycin_doc'
+	 'gnuplot/gnuplot'
         ].
 
 docstr_utilscontrib :=

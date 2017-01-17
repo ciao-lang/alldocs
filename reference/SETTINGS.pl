@@ -209,7 +209,9 @@ docstr_extendprolog :=
 	 % Records and functional notation
 	 'argnames/argnames_doc',
 	 'fsyntax/fsyntax_doc',
-	 'lazy/lazy_doc',
+	 'lazy/lazy_doc'-[
+	   'lazy/lazy_lib'
+         ],
          % Mutables and implicits (globals)
 	 'global_vars',
 	 'mutables',

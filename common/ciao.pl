@@ -139,11 +139,7 @@
 
          @include{Contrib.lpdoc}
 
-      @subsection{PART XI - Contributed standalone utilities}
-
-         @include{ciao-contrib-utilities.lpdoc}
-
-      @subsection{PART XII - Appendices}
+      @subsection{PART XI - Appendices}
 
          @include{Append.lpdoc}
 

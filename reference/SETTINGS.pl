@@ -318,9 +318,7 @@ docstr_adts :=
 %     'lsets'
 	 
 docstr_contrib :=
-	['ddlist/ddlist',
-	 %
-         'dht/dht_doc'-[
+	['dht/dht_doc'-[
 	   'dht/dht_client',
 	   'dht/dht_server'-[
 	     'dht/dht_s2c',

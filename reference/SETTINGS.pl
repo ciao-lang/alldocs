@@ -316,23 +316,7 @@ docstr_adts :=
 %     'lsets'
 	 
 docstr_contrib :=
-	['dht/dht_doc'-[
-	   'dht/dht_client',
-	   'dht/dht_server'-[
-	     'dht/dht_s2c',
-	     'dht/dht_s2s',
-	     'dht/dht_logic'-[
-	       'dht/dht_routing',
-	       'dht/dht_logic_misc',
-	       'dht/dht_rpr',
-	       'dht/dht_storage'
-             ]
-           ],
-	   % Common modules for both DHT server and client
-	   'dht/dht_config',
-	   'dht/dht_misc'
-         ],
-         %
+	[%
 	 'gendot/gendot',
 	 'gnuplot/gnuplot'
         ].

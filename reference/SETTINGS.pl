@@ -317,8 +317,7 @@ docstr_adts :=
 	 
 docstr_contrib :=
 	[%
-	 'gendot/gendot',
-	 'gnuplot/gnuplot'
+	 'gendot/gendot'
         ].
 
 %doc_mainopts := no_patches.

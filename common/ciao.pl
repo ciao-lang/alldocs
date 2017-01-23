@@ -135,11 +135,7 @@
 
          @include{ADTs.lpdoc}
 
-      @subsection{PART X - Contributed libraries}
-
-         @include{Contrib.lpdoc}
-
-      @subsection{PART XI - Appendices}
+      @subsection{PART X - Appendices}
 
          @include{Append.lpdoc}
 

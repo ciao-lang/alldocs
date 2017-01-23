@@ -4,11 +4,11 @@
 version('1.16.0-alpha.1').
 depends([
   core,
-  contrib,
   lpdoc,
   ciaodbg, % debugger, profiler, testing, etc.
   ciao_emacs
-]). % ciaopp?
+  % ciaopp?
+]).
 %
 alias_paths([
   ciao_docsrc = '.'

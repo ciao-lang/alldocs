@@ -17,8 +17,6 @@ filepath := ~ciaofilepath_common.
 filepath := at_bundle(ciao_emacs, 'elisp').
 % TODO: needed in CiaoMode.lpdoc because of @include{README_CIAOPP.lpdoc}
 filepath := at_bundle(ciaopp, 'doc/readmes'). % TODO: should not be here
-% TODO: move to a separate manual?
-filepath := at_bundle(contrib, 'library').
 
 doc_structure := 
         ciao-[
@@ -32,7 +30,6 @@ doc_structure :=
 	  'ExtendProlog'-(~docstr_extendprolog),
 	  'Interfaces'-(~docstr_interfaces),
 	  'ADTs'-(~docstr_adts),
-	  'Contrib'-(~docstr_contrib),
  	  'Append'-(~docstr_installation)
         ].
 
@@ -314,11 +311,6 @@ docstr_adts :=
 %     'keys',
 %     'llists',
 %     'lsets'
-	 
-docstr_contrib :=
-	[%
-	 'gendot/gendot'
-        ].
 
 %doc_mainopts := no_patches.
 doc_mainopts := _ :- fail. % Allow patches in main changelog (those are the release notes)

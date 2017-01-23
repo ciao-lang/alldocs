@@ -2,7 +2,7 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART XII - Appendices").
+:- doc(title,"PART X - Appendices").
 
 :- doc(author,"The CLIP Group").
 

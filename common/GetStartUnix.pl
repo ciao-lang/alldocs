@@ -24,34 +24,12 @@ environment under Unix and Windows.
 
 @section{Testing your Ciao Unix installation}
 
-@noindent It is a good idea to start by performing some tests to check
-that Ciao is installed correctly on your system (these are the same
-tests that you are instructed to do during installation, so you can
-obviously skip them if you have done them already at that time). If
-any of these tests do not succeed either your environment variables
-are not set properly (see @ref{Unix user setup} for how to fix this):
-
-@include{InstallTestUnix.lpdoc}
-
-@section{Unix user setup}
-
-@cindex{user setup}
-@cindex{environment variables, setup}
-
-If the tests above have succeeded, the system is probably installed
-correctly and your environment variables have been set
-already. In that case you can skip to the next section.
-
-Otherwise, if you have not already done so, make the following
-modifications in your startup scripts, so that these files are used
-(@tt{<LIBROOT>} must be replaced with the appropriate value, i.e.,
-where the Ciao library is installed):
-
-@include{UserSetup.lpdoc}
-
-If after following these steps things do not work properly, then the
-installation was probably not completed properly and you may want to
-try reinstalling the system.
+@noindent It is a good idea to start by performing the tests in
+@ref{Checking for correct installation on Unix} to check that Ciao is
+installed correctly on your system (these are the same tests that you
+are instructed to do during installation, so you can obviously skip
+them if you have done them already at that time). If any of these
+tests do not succeed please review the installation instructions.
 
 @section{Using Ciao from a Unix command shell}
 

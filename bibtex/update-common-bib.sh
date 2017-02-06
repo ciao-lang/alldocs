@@ -23,6 +23,26 @@ EOF
     exit 1
 fi
 
+bib_origin_path="../../../../bibtex"
+bib_origin="svn+ssh://cliplab.org/home/clip/SvnReps/bibtex"
+
+check_bib_origin() {
+    if [ -x "$bib_origin_path" ]; then
+	return 0
+    fi
+    cat <<EOF
+Could not find a local copy of:
+  $bib_origin
+under 
+  $bib_origin_path
+
+Please clone the repository under that path or create a symbolic path
+to your copy.
+
+EOF
+    exit 1
+}
+
 # Merge bib file $1 into $2
 merge_bib() {
     # Merge common-tmp.bib into common.bib
@@ -32,11 +52,16 @@ merge_bib() {
 }
 
 update_from_aux() {
-    bibtool -x "$1" -i clip.bib general.bib -o common-tmp.bib 2> /dev/null
+    bibtool -x "$1" -i "$bib_origin_path"/clip/*.bib -o common-tmp.bib 2> /dev/null
     merge_bib common-tmp.bib common.bib 2> /dev/null
     rm -f common-tmp.bib
 }
 
+check_bib_origin
+printf "Using the following .bib files as origin\n"
+for i in "$bib_origin_path"/clip/*.bib; do 
+    printf "  %s\n" $i
+done
 for i in ../../../build/doc/*.cachedoc/*.aux; do
     printf "Updating for entries from %s\n" "$i"
     update_from_aux "$i"

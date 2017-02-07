@@ -181,7 +181,9 @@ docstr_miscprolog :=
 	 'archive_files',
 	 %
 	 'regexp/regexp_doc'-['regexp/regexp_code'],
-	 'text_template'
+	 'text_template',
+	 %
+	 'diff'
 	 ].
 
 %    'tokenize',

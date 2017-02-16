@@ -1,7 +1,5 @@
 :- module(_, [], [lpdoclib(doccfg)]).
 
-:- use_module(library(bundle/bundle_flags), [get_bundle_flag/2]).
-
 :- include(ciao_docsrc(common/'LPDOCCOMMON')).
 
 output_name := 'ciao'.
@@ -240,8 +238,6 @@ docstr_extendprolog :=
 % 'remote_doc',
 % 'mattr_global_doc'
 
-with_mysql := ~get_bundle_flag(core:with_mysql).
-
 % TODO: menu is not an interface! (this is for interfaces to other languages)
 docstr_interfaces :=
 	['foreign_interface/foreign_interface_doc',
@@ -269,26 +265,9 @@ docstr_interfaces :=
 	 'factsdb/factsdb_doc'-[
 	   'factsdb/factsdb_rt'
          ],
-	 ~docstr_persdb_mysql_docs(~with_mysql),
-	 % TODO: nest
-	 'persdb_sql_common/sqltypes',
-	 'persdb_sql_common/persdb_sql_tr',
-	 'persdb_sql_common/pl2sqlinsert',
          %
 	 'emacs/emacs',
 	 'linda'].
-
-%    persdb_sql_common',
-%	db_client',
-
-docstr_persdb_mysql_docs(yes) := [
-	% TODO: nest
-	'persdb_mysql/persdb_mysql_rt',
-	'persdb_mysql/pl2sql',
-	'persdb_mysql/mysql_client',
-	'persdb_mysql/db_client_types'
-  ].
-docstr_persdb_mysql_docs(no) := [].
 
 docstr_adts :=
 	['arrays',

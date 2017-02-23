@@ -9,7 +9,6 @@ filepath := at_bundle(core, 'shell').
 filepath := at_bundle(core, 'ciaoc').
 filepath := at_bundle(core, 'engine').
 filepath := at_bundle(core, 'cmds').
-filepath := at_bundle(core, 'library/pillow/dist/doc').
 filepath := ~ciaofilepath_common.
 %
 filepath := at_bundle(ciao_emacs, 'elisp').
@@ -252,10 +251,13 @@ docstr_interfaces :=
 	 %
 	 'pillow/pillow_doc'-[
 	   'pillow/html',
-	   'pillow/http',
-	   'pillow/pillow_types',
 	   'pillow/json',
-	   'pillow/color_space'
+	   'pillow/color_space',
+	   'pillow/url',
+	   'pillow/cgi',
+	   'pillow/http',
+	   % 'pillow/http_post', % TODO: why?
+	   'pillow/http_server'
          ],
          %
 	 'persdb/persdb_rt'-[

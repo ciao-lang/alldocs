@@ -9,7 +9,7 @@
 # necessarily distributed)
 #
 
-if ! which bibtool 2>&1 > /dev/null; then
+if ! command -v bibtool > /dev/null 2>&1; then
     cat <<EOF
 Cannot find 'bibtool' in the path.
 

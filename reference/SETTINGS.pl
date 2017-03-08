@@ -180,6 +180,8 @@ docstr_miscprolog :=
 	 'regexp/regexp_doc'-['regexp/regexp_code'],
 	 'text_template',
 	 %
+	 'parse_shell_args',
+	 %
 	 'diff'
 	 ].
 

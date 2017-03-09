@@ -165,6 +165,8 @@ docstr_miscprolog :=
 	 'concurrency/concurrency',
 	 'conc_aggregates',
 	 %
+	 'random_aggregates',
+	 %
 	 'sockets/sockets',
 	 'sockets/sockets_io',
          %

@@ -155,6 +155,7 @@ docstr_miscprolog :=
 	 'cyclic_terms',
 	 %
 	 'pretty_print',
+	 'modblobs/modblobs',
 	 %
 	 'assertions/assrt_write',
 	 %

@@ -266,7 +266,8 @@ docstr_interfaces :=
          ],
          %
 	 'persdb/persdb_rt'-[
-	   'persdb/persdb_examples'
+	   'persdb/persdb_examples',
+	   'persdb/datadir'
          ],
          %
 	 'factsdb/factsdb_doc'-[

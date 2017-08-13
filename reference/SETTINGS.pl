@@ -90,6 +90,7 @@ docstr_refcomponents :=
 docstr_isoprolog :=
 	['iso_doc',
 	 'aggregates',
+	 'dynamic',
 	 'dynamic_rt',
 	 'read',
 	 'write',

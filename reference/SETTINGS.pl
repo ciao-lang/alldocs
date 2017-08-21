@@ -141,8 +141,6 @@ docstr_miscprolog :=
 	 'strings',
 	 'messages',
 	 'io_alias_redirection',
-	 'port_reify',
-	 'io_port_reify',
 	 'read_from_string',
 	 'ctrlcclean',
 	 'errhandle',

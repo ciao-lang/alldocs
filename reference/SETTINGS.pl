@@ -257,22 +257,15 @@ docstr_interfaces :=
 	 %
 	 'davinci/davinci',
 	 %
-	 'http/http_doc'-[
-	   'http/http_client',
-	   'http/http_server',
-	   'http/url',
-	   'http/http_forms',
-	   'http/cgi',
-	   % (internal)
-	   'http/http_messages',
-	   'http/http_date',
-	   'http/http_grammar'
-	 ],
-	 %
 	 'pillow/pillow_doc'-[
 	   'pillow/html',
 	   'pillow/json',
-	   'pillow/color_space'
+	   'pillow/color_space',
+	   'pillow/url',
+	   'pillow/cgi',
+	   'pillow/http',
+	   % 'pillow/http_post', % TODO: why?
+	   'pillow/http_server'
          ],
          %
 	 'persdb/persdb_rt'-[

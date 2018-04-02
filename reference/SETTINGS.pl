@@ -284,7 +284,6 @@ docstr_interfaces :=
 	   'factsdb/factsdb_rt'
          ],
          %
-	 'opendoc',
 	 'emacs/emacs',
 	 'linda'].
 

@@ -4,7 +4,7 @@
 
 :- doc(title,"PART VIII - Interfaces to other languages and systems").
 
-:- doc(author,"The CLIP Group").
+:- doc(author,"The Ciao Development Team").
 
 :- doc(module,"@include{Interfaces.lpdoc}").
 

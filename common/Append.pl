@@ -4,6 +4,6 @@
 
 :- doc(title,"PART X - Appendices").
 
-:- doc(author,"The CLIP Group").
+:- doc(author,"The Ciao Development Team").
 
 :- doc(module,"@include{Append.lpdoc}").

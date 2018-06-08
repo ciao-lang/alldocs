@@ -4,6 +4,6 @@
 
 :- doc(title,"PART V - Assertions, Properties, Types, Modes, Comments (assertions)").
 
-:- doc(author, "The CLIP Group").
+:- doc(author, "The Ciao Development Team").
 
 :- doc(module,"@include{AnnotatedProlog.lpdoc}").

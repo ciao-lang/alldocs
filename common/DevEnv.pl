@@ -4,6 +4,6 @@
 
 :- doc(title,"PART I - The program development environment").
 
-:- doc(author,"The CLIP Group").
+:- doc(author,"The Ciao Development Team").
 
 :- doc(module,"@include{DevEnv.lpdoc}").

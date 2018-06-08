@@ -4,7 +4,7 @@
 
 :- doc(title,"PART VII - Ciao extensions").
 
-:- doc(author,"The CLIP Group").
+:- doc(author,"The Ciao Development Team").
 
 :- doc(module,"@include{ExtendProlog.lpdoc}").
 

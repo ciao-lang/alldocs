@@ -4,7 +4,7 @@
 
 :- doc(title,"PART III - ISO-Prolog library (iso)").
 
-:- doc(author, "The CLIP Group").
+:- doc(author, "The Ciao Development Team").
 
 :- doc(module,"@include{IsoProlog.lpdoc}").
 

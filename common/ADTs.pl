@@ -4,6 +4,6 @@
 
 :- doc(title,"PART IX - Abstract data types").
 
-:- doc(author,"The CLIP Group").
+:- doc(author,"The Ciao Development Team").
 
 :- doc(module,"@include{ADTs.lpdoc}").

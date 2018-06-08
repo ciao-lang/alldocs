@@ -4,7 +4,7 @@
 
 :- doc(title,"PART IV - Classic Prolog library (classic)").
 
-:- doc(author, "The CLIP Group").
+:- doc(author, "The Ciao Development Team").
 
 :- doc(module,"@include{ClassicProlog.lpdoc}").
 

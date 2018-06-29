@@ -1,0 +1,5 @@
+@begin{alert} @bf{Warning:} This feature is currently the subject of
+ active research. This means that API or semantics can change without
+ warning or deprecation period and it is not recommended to use it
+ in production just yet - you have been warned.
+@end{alert}

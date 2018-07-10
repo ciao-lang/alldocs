@@ -230,7 +230,7 @@ docstr_extendprolog :=
 	 % TODO: undo/1 should be here
 	 % Concurrency
 	 'actmod/actmod_doc',
-	 'agent/agent_doc',
+	 % 'agent/agent_doc', (Deprecated)
 	 %
 	 'bf/bf_doc',
 	 'id/id_doc',

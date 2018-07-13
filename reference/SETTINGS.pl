@@ -205,9 +205,10 @@ docstr_miscprolog :=
 % TODO: Document: those libraries may change the 'theory'
 docstr_extendprolog :=
 	['pure/pure_doc',
-	 % Higher order
+	 % Higher order, interfaces, etc.
 	 'hiord_rt', % engine
 	 'hiordlib',
+	 'traits/traits_doc',
 	 % Records and functional notation
 	 'argnames/argnames_doc',
 	 'fsyntax/fsyntax_doc',

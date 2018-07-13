@@ -229,8 +229,16 @@ docstr_extendprolog :=
 	 'det_hook/det_hook_doc',
 	 'det_hook/det_hook_rt',
 	 % TODO: undo/1 should be here
-	 % Concurrency
-	 'actmod/actmod_doc',
+	 % Concurrency and distributed
+	 'actmod/actmod_doc'-[
+	   'actmod/actmod_dist'-[
+             'actmod/regp_filebased',
+             'actmod/regp_platformbased',
+             'actmod/regp_webbased'
+	   ],
+           'actmod/actmod_process',
+           'actmod/actmod_rt'
+         ],
 	 % 'agent/agent_doc', (Deprecated)
 	 %
 	 'bf/bf_doc',

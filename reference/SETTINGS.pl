@@ -181,6 +181,8 @@ docstr_miscprolog :=
 	 %
 	 'archive_files',
 	 %
+	 'version_strings',
+	 %
 	 'regexp/regexp_doc'-['regexp/regexp_code'],
 	 'text_template',
 	 %

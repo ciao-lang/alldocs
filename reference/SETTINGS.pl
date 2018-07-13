@@ -248,10 +248,11 @@ docstr_extendprolog :=
 
 % TODO: menu is not an interface! (this is for interfaces to other languages)
 docstr_interfaces :=
-	['foreign_interface/foreign_interface_doc',
-	 'foreign_interface/foreign_interface_properties',
-	 'foreign_compilation',
-	 'foreign_interface/build_foreign_interface',
+	['foreign_interface/foreign_interface_doc'-[
+	   'foreign_interface/foreign_interface_properties',
+	   'foreign_compilation',
+	   'foreign_interface/build_foreign_interface'
+         ],
 	 %
 	 'menu/menu_doc',
 	 'menu/menu_generator',

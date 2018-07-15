@@ -11,6 +11,8 @@ filepath := at_bundle(core, 'engine').
 filepath := at_bundle(core, 'cmds').
 filepath := ~ciaofilepath_common.
 %
+filepath := at_bundle(builder, 'src').
+%
 filepath := at_bundle(ciao_emacs, 'elisp').
 
 doc_structure := 
@@ -38,12 +40,12 @@ docstr_installation :=
 	 'BeyondInstall'].
 
 docstr_devenv :=
-	['ciaoc',
+	['builder_doc',
+	 'ciaoc',
 	 'toplevel/toplevel_doc',
 	 'debugger/debugger_doc'-['debugger/debugger'],
 	 'ciao-shell',
 	 'ciao-utilities'-(~docstr_utils),
-	 'libpaths',
 	 'CiaoMode'].
 
 % (those are part of the development environment)
@@ -57,6 +59,7 @@ docstr_utils :=
 
 docstr_refcomponents :=
 	['modules', % engine
+	 'bundles_doc', % engine
 	 'loading_code', % engine
 	 'basiccontrol', % engine
 	 'builtin_directives', % engine
@@ -76,6 +79,7 @@ docstr_refcomponents :=
 	 'attr/attr_doc' - ['attr/attr_rt'],
 	 'attributes', % engine
 	 'system_info', % engine
+	 'libpaths',
 	 'condcomp/condcomp_doc',
 	 'default_predicates'].
 

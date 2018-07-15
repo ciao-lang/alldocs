@@ -3,6 +3,9 @@ development environment.  They include:
 
    @begin{description}
 
+   @item{ciao:} the Ciao @em{super-command}, which invokes the
+   toplevel or the build system for @concept{bundle} management.
+
    @item{ciaoc:} the standalone compiler, which creates executables
    without having to enter the interactive top-level.
 

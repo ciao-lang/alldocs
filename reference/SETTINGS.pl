@@ -95,7 +95,7 @@ docstr_isoprolog :=
 	 'dynamic',
 	 'dynamic_clauses/dynamic_clauses_doc'-[
 	   'dynamic_clauses/dynamic_clauses_rt'
-	 ],
+ 	 ],
 	 'read',
 	 'write',
 	 'operators',

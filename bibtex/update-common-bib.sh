@@ -15,6 +15,8 @@ Cannot find 'bibtool' in the path.
 
 Install with:
 
+  $ port install BibTool  # macOS, MacPorts
+
   $ brew install bib-tool # macOS, homebrew
 
   $ apt-get install bibtool # Ubuntu
@@ -33,7 +35,7 @@ check_bib_origin() {
     cat <<EOF
 Could not find a local copy of:
   $bib_origin
-under 
+under
   $bib_origin_path
 
 Please clone the repository under that path or create a symbolic path

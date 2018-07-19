@@ -127,8 +127,7 @@ docstr_annotatedprolog :=
 	 'assertions/native_props',
 	 %
 	 'isomodes/isomodes_doc',
-	 'basicmodes/basicmodes_doc',
-	 'rtchecks/rtchecks_doc'
+	 'basicmodes/basicmodes_doc'
 	].
 
 % 'fdtypes'

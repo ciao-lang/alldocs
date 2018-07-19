@@ -19,7 +19,7 @@ doc_structure :=
         ciao-[
 	  (~docstr_getstarted),
 	  'DevEnv'-(~docstr_devenv),
-	  'Builtins'-(~docstr_refcomponents),
+	  'BasicLang'-(~docstr_basiclang),
 	  'IsoProlog'-(~docstr_isoprolog),
 	  'ClassicProlog'-(~docstr_classicprolog),
 	  'AnnotatedProlog'-(~docstr_annotatedprolog),
@@ -57,7 +57,7 @@ docstr_utils :=
 %	 'get_deps',
 	 'pldiff'].
 
-docstr_refcomponents :=
+docstr_basiclang :=
 	['modules', % engine
 	 'bundles_doc', % engine
 	 'loading_code', % engine

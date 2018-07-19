@@ -103,9 +103,9 @@
 
          @include{DevEnv.lpdoc}
 
-      @subsection{PART II - The Ciao basic language (engine)}
+      @subsection{PART II - The Ciao basic language}
 
-         @include{Builtins.lpdoc}
+         @include{BasicLang.lpdoc}
 
       @subsection{PART III - ISO-Prolog library (iso)}
 

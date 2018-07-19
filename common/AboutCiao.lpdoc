@@ -40,7 +40,7 @@ language and libraries. The @tt{ciaopp} and @tt{lpdoc} tools are
 documented in separate manuals.
 
 
-The Ciao language [see PART II - The Ciao basic language (engine)] has
+The Ciao language [see PART II - The Ciao basic language] has
 been designed from the ground up to be small, but to also allow
 extensions and restrictions in a modular way. The first objective
 allows producing small executables (including only those builtins used

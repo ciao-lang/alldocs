@@ -58,8 +58,12 @@ docstr_utils :=
 	 'pldiff'].
 
 docstr_basiclang :=
-	['modules', % engine
+	[% (Code organization)
+	 'modules', % engine
 	 'bundles_doc', % engine
+	 'packages', % engine
+	 'condcomp/condcomp_doc',
+	 % (Predicates and terms)
 	 'basiccontrol', % engine
 	 'exceptions', % engine
 	 'basic_props', % engine
@@ -67,15 +71,18 @@ docstr_basiclang :=
 	 'term_basic', % engine
 	 'term_compare', % engine
 	 'atomic_basic', % engine
-	 'data_facts', % engine
-	 'condcomp/condcomp_doc',
-	 %
-	 'syntax_extensions', % engine
 	 'attr/attr_doc' - [
            'attr/attr_rt',
            'attributes' % engine
          ],
+	 % (Dynamic database)
+	 'data_facts', % engine
+	 'dynamic', % (OPTIONAL)
+	 'dynamic_clauses/dynamic_clauses_doc'-[ % (OPTIONAL)
+	   'dynamic_clauses/dynamic_clauses_rt'
+ 	 ],
 	 %
+	 % (Standard library)
 	 'arithmetic', % engine
 	 %
 	 'streams_basic', % engine
@@ -96,10 +103,6 @@ docstr_basiclang :=
 docstr_isoprolog :=
 	['iso_doc',
 	 'aggregates',
-	 'dynamic',
-	 'dynamic_clauses/dynamic_clauses_doc'-[
-	   'dynamic_clauses/dynamic_clauses_rt'
- 	 ],
 	 'read',
 	 'write',
 	 'operators',

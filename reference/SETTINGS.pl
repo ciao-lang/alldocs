@@ -71,8 +71,10 @@ docstr_basiclang :=
 	 'condcomp/condcomp_doc',
 	 %
 	 'syntax_extensions', % engine
-	 'attr/attr_doc' - ['attr/attr_rt'],
-	 'attributes', % engine
+	 'attr/attr_doc' - [
+           'attr/attr_rt',
+           'attributes' % engine
+         ],
 	 %
 	 'arithmetic', % engine
 	 %

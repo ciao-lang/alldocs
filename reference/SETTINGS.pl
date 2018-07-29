@@ -62,7 +62,6 @@ docstr_basiclang :=
 	 'bundles_doc', % engine
 	 'loading_code', % engine
 	 'basiccontrol', % engine
-	 'builtin_directives', % engine
 	 'basic_props', % engine
 	 'term_typing', % engine
 	 'term_basic', % engine

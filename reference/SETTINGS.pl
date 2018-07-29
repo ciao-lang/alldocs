@@ -128,8 +128,9 @@ docstr_classicprolog :=
 %    'classic_doc'
 
 docstr_annotatedprolog :=
-	['assertions/assertions_doc',
-	 'assertions/assertions_props',
+	['assertions/assertions_doc'-[
+	   'assertions/assertions_props'
+         ],
 	 'regtypes/regtypes_doc',
 	 'assertions/native_props',
 	 %

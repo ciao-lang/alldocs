@@ -67,18 +67,22 @@ docstr_basiclang :=
 	 'term_basic', % engine
 	 'term_compare', % engine
 	 'atomic_basic', % engine
-	 'arithmetic', % engine
-	 'streams_basic', % engine
-	 'io_basic', % engine
-	 'prolog_flags', % engine
 	 'data_facts', % engine
+	 'condcomp/condcomp_doc',
+	 %
 	 'syntax_extensions', % engine
-	 'io_aux', % engine
 	 'attr/attr_doc' - ['attr/attr_rt'],
 	 'attributes', % engine
+	 %
+	 'arithmetic', % engine
+	 %
+	 'streams_basic', % engine
+	 'io_basic', % engine
+	 %
+	 'prolog_flags', % engine
+	 'io_aux', % engine
 	 'system_info', % engine
 	 'libpaths',
-	 'condcomp/condcomp_doc',
 	 'default_predicates'].
 
 % Should not be used, so we do not document them

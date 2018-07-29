@@ -61,6 +61,7 @@ docstr_basiclang :=
 	['modules', % engine
 	 'bundles_doc', % engine
 	 'basiccontrol', % engine
+	 'exceptions', % engine
 	 'basic_props', % engine
 	 'term_typing', % engine
 	 'term_basic', % engine
@@ -69,7 +70,6 @@ docstr_basiclang :=
 	 'arithmetic', % engine
 	 'streams_basic', % engine
 	 'io_basic', % engine
-	 'exceptions', % engine
 	 'prolog_flags', % engine
 	 'data_facts', % engine
 	 'syntax_extensions', % engine

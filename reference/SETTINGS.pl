@@ -75,24 +75,14 @@ docstr_basiclang :=
            'attr/attr_rt',
            'attributes' % engine
          ],
+	 'arithmetic', % engine
 	 % (Dynamic database)
 	 'data_facts', % engine
 	 'dynamic', % (OPTIONAL)
 	 'dynamic_clauses/dynamic_clauses_doc'-[ % (OPTIONAL)
 	   'dynamic_clauses/dynamic_clauses_rt'
- 	 ],
-	 %
-	 % (Standard library)
-	 'arithmetic', % engine
-	 %
-	 'streams_basic', % engine
-	 'io_basic', % engine
-	 %
-	 'prolog_flags', % engine
-	 'io_aux', % engine
-	 'system_info', % engine
-	 'libpaths',
-	 'default_predicates'].
+ 	 ]
+        ].
 
 % Should not be used, so we do not document them
 % 	'internals'
@@ -102,24 +92,40 @@ docstr_basiclang :=
 
 docstr_isoprolog :=
 	['iso_doc',
-	 'aggregates',
-	 'read',
-	 'write',
-	 'operators',
 	 'iso_char',
 	 'iso_misc',
 	 'iso_incomplete'].
 
 docstr_classicprolog :=
-	['dcg/dcg_doc'-['dcg/dcg_phrase_doc'],
+	[	 %
+	 % (Standard library)
 	 %
-	 'format',
+	 'default_predicates',
+	 %
 	 'lists',
 	 'sort',
-	 'compiler/compiler',
 	 'between',
+	 %
+	 'aggregates',
+	 %
+	 'libpaths',
+	 'compiler/compiler',
+	 %
+	 'streams_basic', % engine
+	 'io_basic', % engine
+	 'read',
+	 'write',
+	 'operators',
+	 'format',
+	 'io_aux', % engine
+	 %
 	 'system',
+	 %
+	 'prolog_flags', % engine
+	 'system_info', % engine
 	 'prolog_sys',
+	 %
+	 % TODO: move things above to stdlib and below to isoandclassic
 	 'dec10_io',
 	 'old_database',
 	 'ttyout',
@@ -228,7 +234,9 @@ docstr_extendprolog :=
 	 'lazy/lazy_doc'-[
 	   'lazy/lazy_lib'
          ],
-         % Mutables and implicits (globals)
+	 % DCGs % TODO: add implicits/fluids
+	 'dcg/dcg_doc'-['dcg/dcg_phrase_doc'],
+	 % Mutables and implicits (globals)
 	 'global_vars',
 	 'mutables',
 	 %

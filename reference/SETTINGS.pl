@@ -60,7 +60,6 @@ docstr_utils :=
 docstr_basiclang :=
 	['modules', % engine
 	 'bundles_doc', % engine
-	 'loading_code', % engine
 	 'basiccontrol', % engine
 	 'basic_props', % engine
 	 'term_typing', % engine

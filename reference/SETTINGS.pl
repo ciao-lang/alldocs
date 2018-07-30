@@ -157,25 +157,32 @@ docstr_miscprolog :=
 	 'strings',
 	 'messages',
 	 'io_alias_redirection',
+	 %
 	 'port_reify',
 	 'io_port_reify',
+	 %
 	 'read_from_string',
+	 %
 	 'ctrlcclean',
 	 'errhandle',
 	 'fastrw',
+	 %
 	 'pathnames',
-	 'symfnames/symfnames',
+	 %
+	 'counters',
+	 %
 	 'file_utils',
 	 'file_locks/file_locks',
+	 %
 	 'formulae',
 	 'terms',
 	 'terms_check',
 	 'terms_vars',
 	 'cyclic_terms',
 	 %
-	 'pretty_print',
 	 'modblobs/modblobs',
 	 %
+	 'pretty_print',
 	 'assertions/assrt_write',
 	 %
 	 'librowser/librowser',
@@ -205,6 +212,8 @@ docstr_miscprolog :=
 	 'text_template',
 	 %
 	 'parse_shell_args',
+	 %
+	 'symfnames/symfnames',
 	 %
 	 'diff'
 	 ].
@@ -315,13 +324,14 @@ docstr_interfaces :=
          ],
          %
 	 'opendoc',
+	 %
 	 'emacs/emacs',
+	 %
 	 'linda'].
 
 docstr_adts :=
 	['arrays',
 	 'assoc',
-	 'counters',
 	 'idlists',
 	 'numlists',
 %	 'patterns',

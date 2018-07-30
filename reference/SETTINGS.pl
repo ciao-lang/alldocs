@@ -20,7 +20,7 @@ doc_structure :=
 	  (~docstr_getstarted),
 	  'DevEnv'-(~docstr_devenv),
 	  'BasicLang'-(~docstr_basiclang),
-	  'IsoProlog'-(~docstr_isoprolog),
+	  'CompatProlog'-(~docstr_compatprolog),
 	  'ClassicProlog'-(~docstr_classicprolog),
 	  'AnnotatedProlog'-(~docstr_annotatedprolog),
 	  'MiscProlog'-(~docstr_miscprolog),
@@ -90,11 +90,16 @@ docstr_basiclang :=
 % Other
 % 	'mexpand'
 
-docstr_isoprolog :=
+docstr_compatprolog :=
 	['iso_doc',
 	 'iso_char',
 	 'iso_misc',
-	 'iso_incomplete'].
+	 'iso_incomplete',
+	 % (most of them obsolete)
+	 'dec10_io',
+	 'old_database',
+	 'ttyout',
+	 'runtime_ops/runtime_ops_doc'].
 
 docstr_classicprolog :=
 	[	 %
@@ -109,7 +114,7 @@ docstr_classicprolog :=
 	 'aggregates',
 	 %
 	 'libpaths',
-	 'compiler/compiler',
+	 'compiler/compiler', % TODO: for dynamic compilation and code loading
 	 %
 	 'streams_basic', % engine
 	 'io_basic', % engine
@@ -123,13 +128,7 @@ docstr_classicprolog :=
 	 %
 	 'prolog_flags', % engine
 	 'system_info', % engine
-	 'prolog_sys',
-	 %
-	 % TODO: move things above to stdlib and below to isoandclassic
-	 'dec10_io',
-	 'old_database',
-	 'ttyout',
-	 'runtime_ops/runtime_ops_doc'].
+	 'prolog_sys'].
 
 %    'classic_doc'
 

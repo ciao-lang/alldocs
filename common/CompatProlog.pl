@@ -2,10 +2,10 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART III - ISO-Prolog library (iso)").
+:- doc(title,"PART III - Compatibility").
 
 :- doc(author, "The Ciao Development Team").
 
-:- doc(module,"@include{IsoProlog.lpdoc}").
+:- doc(module,"@include{CompatProlog.lpdoc}").
 
 

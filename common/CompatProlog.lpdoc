@@ -1,0 +1,5 @@
+This part documents libraries which provide tighter compatibility with
+the @index{ISO-Prolog} standard (for features not covered in the basic
+Ciao libraries), as well as additional predicates and functionalities
+that, despite not being in the ISO standard, are present in popular
+Prolog implementations.

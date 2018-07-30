@@ -107,9 +107,9 @@
 
          @include{BasicLang.lpdoc}
 
-      @subsection{PART III - ISO-Prolog library (iso)}
+      @subsection{PART III - Compatibility}
 
-         @include{IsoProlog.lpdoc}
+         @include{CompatProlog.lpdoc}
 
       @subsection{PART IV - Classic Prolog library (classic)}
 

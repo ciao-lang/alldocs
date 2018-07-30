@@ -46,11 +46,11 @@ extensions and restrictions in a modular way. The first objective
 allows producing small executables (including only those builtins used
 by the program), providing basic support for pure logic programming,
 and being able to write scripts in Ciao. The second one allows
-supporting standard ISO-Prolog [see PART III - ISO-Prolog library
-(iso)], as well as powerful extensions such as constraint logic
-programming, functional logic programming, and object-oriented logic
-programming [see PART VII - Ciao extensions], and restrictions
-such as working with pure horn clauses.
+supporting standard ISO-Prolog [see PART III - Compatibility],
+as well as powerful extensions such as constraint logic programming,
+functional logic programming, and object-oriented logic programming
+[see PART VII - Ciao extensions], and restrictions such as working
+with pure horn clauses.
 
 The design of Ciao has also focused on allowing modular program
 development, as well as automatic program manipulation and

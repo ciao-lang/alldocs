@@ -131,9 +131,9 @@
 
          @include{Interfaces.lpdoc}
 
-      @subsection{PART IX - Abstract data types}
+      @subsection{PART IX - Data structures}
 
-         @include{ADTs.lpdoc}
+         @include{DataStructures.lpdoc}
 
       @subsection{PART X - Appendices}
 

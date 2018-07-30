@@ -26,7 +26,7 @@ doc_structure :=
 	  'MiscProlog'-(~docstr_miscprolog),
 	  'ExtendProlog'-(~docstr_extendprolog),
 	  'Interfaces'-(~docstr_interfaces),
-	  'ADTs'-(~docstr_adts),
+	  'DataStructures'-(~docstr_datastructures),
  	  'Append'-(~docstr_installation)
         ].
 
@@ -255,8 +255,9 @@ docstr_extendprolog :=
 	 'freeze/freeze',
 	 'when/when',
 	 'andorra/andorra_doc',
-	 'det_hook/det_hook_doc',
-	 'det_hook/det_hook_rt',
+	 'det_hook/det_hook_doc'-[
+	   'det_hook/det_hook_rt'
+         ],
 	 % TODO: undo/1 should be here
 	 % Concurrency and distributed
 	 'actmod/actmod_doc'-[
@@ -329,7 +330,10 @@ docstr_interfaces :=
 	 %
 	 'linda'].
 
-docstr_adts :=
+% Theses are data structures (in the sense of [1]), implementing some ADTs [2]
+%   [1] https://xlinux.nist.gov/dads/HTML/dataStructure.html
+%   [2] https://xlinux.nist.gov/dads/HTML/abstractDataType.html
+docstr_datastructures :=
 	['arrays',
 	 'assoc',
 	 'idlists',
@@ -338,19 +342,19 @@ docstr_adts :=
 
 	 'graphs/graphs',
 	 'graphs/ugraphs',
-	 'graphs/wgraphs',
+	 % 'graphs/wgraphs', % it was a verbatim copy of lgraphs using X is min(A,B) instead of min/3
 	 'graphs/lgraphs',
-
+	 %
 	 'queues',
 	 'random/random',
 	 'sets',
-	 'vndict'].
-
-%     'bitcodesets',
-%     'formulae',
-%     'keys',
-%     'llists',
-%     'lsets'
+	 'vndict',
+	 %
+	 % TODO: review
+	 'bitcodesets',
+	 'keys', % TODO: document/merge
+	 'lsets' % TODO: document/merge
+        ].
 
 %doc_mainopts := no_patches.
 doc_mainopts := _ :- fail. % Allow patches in main changelog (those are the release notes)

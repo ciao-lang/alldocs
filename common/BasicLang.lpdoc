@@ -13,3 +13,8 @@ using a @tt{:- module(_,_,[pure]).} declaration or @tt{:-
 use_package(pure).}) to select a minimal @em{kernel} language with
 tighter control on the default language features.
 
+@section{Syntax terminology and notational conventions}
+@cindex{notation}
+
+@include{Conventions.lpdoc}
+

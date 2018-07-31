@@ -84,12 +84,6 @@
 @includeverbatim{CiaoReference.lpdoc}
 @end{verbatim}
 
-
-   @section{Syntax terminology and notational conventions}
-   @cindex{notation}
-
-      @include{Conventions.lpdoc}
-
    @section{Acknowledgments} 
    @cindex{acknowledgments}
 

@@ -107,21 +107,21 @@
 
          @include{BasicLang.lpdoc}
 
-      @subsection{PART III - Compatibility}
+      @subsection{PART III - Assertions}
 
-         @include{CompatProlog.lpdoc}
+         @include{AssrtLang.lpdoc}
 
       @subsection{PART IV - Classic Prolog library (classic)}
 
          @include{ClassicProlog.lpdoc}
 
-      @subsection{PART V - Assertions, Properties, Types, Modes, Comments (assertions)}
+      @subsection{PART V - Compatibility}
 
-         @include{AnnotatedProlog.lpdoc}
+         @include{CompatProlog.lpdoc}
 
-      @subsection{PART VI - Ciao library miscellanea}
+      @subsection{PART VI - Additional libraries}
 
-         @include{MiscProlog.lpdoc}
+         @include{ExtraLibs.lpdoc}
 
       @subsection{PART VII - Ciao extensions}
 

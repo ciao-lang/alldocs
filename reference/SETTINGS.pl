@@ -22,22 +22,21 @@ doc_structure :=
 	  'BasicLang'-(~docstr_basiclang),
 	  'CompatProlog'-(~docstr_compatprolog),
 	  'ClassicProlog'-(~docstr_classicprolog),
-	  'AnnotatedProlog'-(~docstr_annotatedprolog),
-	  'MiscProlog'-(~docstr_miscprolog),
+	  'AssrtLang'-(~docstr_assrtlang),
+	  'ExtraLibs'-(~docstr_extralibs),
 	  'ExtendProlog'-(~docstr_extendprolog),
 	  'Interfaces'-(~docstr_interfaces),
 	  'DataStructures'-(~docstr_datastructures),
- 	  'Appendices'-(~docstr_installation)
+ 	  'Appendices'-(~docstr_appendices)
         ].
+
+% ---------------------------------------------------------------------------
 
 docstr_getstarted :=
 	['GetStartUnix',
 	 'GetStartWin32'].
 
-docstr_installation :=
-	['Install',
-	 'InstallWin32bin',
-	 'BeyondInstall'].
+% ---------------------------------------------------------------------------
 
 docstr_devenv :=
 	['builder_doc',
@@ -56,6 +55,8 @@ docstr_utils :=
 	 % 'show_deps'?
 %	 'get_deps',
 	 'pldiff'].
+
+% ---------------------------------------------------------------------------
 
 docstr_basiclang :=
 	[% (Code organization)
@@ -90,6 +91,8 @@ docstr_basiclang :=
 % Other
 % 	'mexpand'
 
+% ---------------------------------------------------------------------------
+
 docstr_compatprolog :=
 	['iso_doc',
 	 'iso_char',
@@ -101,6 +104,8 @@ docstr_compatprolog :=
 	 'ttyout',
 	 'runtime_ops/runtime_ops_doc',
 	 'listing'].
+
+% ---------------------------------------------------------------------------
 
 docstr_classicprolog :=
 	[% (Standard library)
@@ -135,7 +140,9 @@ docstr_classicprolog :=
 
 %    'classic_doc'
 
-docstr_annotatedprolog :=
+% ---------------------------------------------------------------------------
+
+docstr_assrtlang :=
 	['assertions/assertions_doc'-[
 	   'assertions/assertions_props'
          ],
@@ -145,15 +152,10 @@ docstr_annotatedprolog :=
 	 'isomodes/isomodes_doc',
 	 'basicmodes/basicmodes_doc'
 	].
-
-% TODO: other libraries that are distributed but not ready:
-%   'metatypes'
-%   'meta_props'
-%   'loops'
-%   'parse_spec'
-%   'prompt'
 	 
-docstr_miscprolog :=
+% ---------------------------------------------------------------------------
+
+docstr_extralibs :=
 	['getopts',
 	 'messages',
 	 %
@@ -227,6 +229,8 @@ docstr_miscprolog :=
 	 'diff'
 	 ].
 
+% ---------------------------------------------------------------------------
+
 % TODO: Document: those libraries may change the 'theory'
 docstr_extendprolog :=
 	['pure/pure_doc',
@@ -279,6 +283,8 @@ docstr_extendprolog :=
 	 % 'fuzzy/fuzzy_doc', (moved to its own repo)
          ].
 
+% ---------------------------------------------------------------------------
+
 % TODO: menu is not an interface! (this is for interfaces to other languages)
 docstr_interfaces :=
 	['foreign_interface/foreign_interface_doc'-[
@@ -325,6 +331,8 @@ docstr_interfaces :=
 	 %
 	 'linda'].
 
+% ---------------------------------------------------------------------------
+
 % Theses are data structures (in the sense of [1]), implementing some ADTs [2]
 %   [1] https://xlinux.nist.gov/dads/HTML/dataStructure.html
 %   [2] https://xlinux.nist.gov/dads/HTML/abstractDataType.html
@@ -353,6 +361,24 @@ docstr_datastructures :=
 	 'keys', % TODO: document/merge
 	 'lsets' % TODO: document/merge
         ].
+
+% ---------------------------------------------------------------------------
+
+% TODO: other libraries that are distributed but not ready:
+%   'metatypes'
+%   'meta_props'
+%   'loops'
+%   'parse_spec'
+%   'prompt'
+
+% ---------------------------------------------------------------------------
+
+docstr_appendices :=
+	['Install',
+	 'InstallWin32bin',
+	 'BeyondInstall'].
+
+% ---------------------------------------------------------------------------
 
 %doc_mainopts := no_patches.
 doc_mainopts := _ :- fail. % Allow patches in main changelog (those are the release notes)

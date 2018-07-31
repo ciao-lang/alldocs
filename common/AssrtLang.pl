@@ -2,10 +2,8 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART V - Compatibility").
+:- doc(title,"PART III - Assertions").
 
 :- doc(author, "The Ciao Development Team").
 
-:- doc(module,"@include{CompatProlog.lpdoc}").
-
-
+:- doc(module,"@include{AssrtLang.lpdoc}").

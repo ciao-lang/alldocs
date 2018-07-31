@@ -2,10 +2,10 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART VI - Ciao library miscellanea").
+:- doc(title,"PART VI - Additional libraries").
 
 :- doc(author,"The Ciao Development Team").
 
-:- doc(module,"@include{MiscProlog.lpdoc}").
+:- doc(module,"@include{ExtraLibs.lpdoc}").
 
 

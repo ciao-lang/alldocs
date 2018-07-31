@@ -130,7 +130,7 @@
 % 
 %          @include{ExtendLang.lpdoc}
 % 
-%       @subsection{PART VIII - Interfaces to other languages and systems}
+%       @subsection{PART VIII - Foreign interfaces}
 % 
 %          @include{Interfaces.lpdoc}
 % 

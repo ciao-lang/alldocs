@@ -211,6 +211,24 @@ docstr_extralibs :=
 	 'sockets/sockets',
 	 'sockets/sockets_io',
          %
+	 'http/http_doc'-[
+	   'http/http_client',
+	   'http/http_server',
+	   'http/url',
+	   'http/http_forms',
+	   'http/cgi',
+	   % (internal)
+	   'http/http_messages',
+	   'http/http_date',
+	   'http/http_grammar'
+	 ],
+	 %
+	 'pillow/pillow_doc'-[
+	   'pillow/html',
+	   'pillow/json',
+	   'pillow/color_space'
+         ],
+	 %
 	 'system_extra',
 	 'process/process'-['process/process_channel'],
 	 %
@@ -226,7 +244,11 @@ docstr_extralibs :=
 	 %
 	 'parse_shell_args',
 	 %
-	 'symfnames/symfnames'
+	 'symfnames/symfnames',
+	 %
+	 'menu/menu_doc'-[
+	   'menu/menu_generator'
+         ]
 	 ].
 
 % ---------------------------------------------------------------------------
@@ -277,9 +299,17 @@ docstr_extendlang :=
 	 % Constrain domains
 	 'clpq/clpq_doc',
 	 'clpr/clpr_doc',
-	 'clpfd/clpfd_doc' -[
-	   'clpfd/clpfd_rt']
-	 % 'fuzzy/fuzzy_doc', (moved to its own repo)
+	 'clpfd/clpfd_doc'-[
+	   'clpfd/clpfd_rt'
+         ],
+         % Persistence
+	 'persdb/persdb_rt'-[
+	   'persdb/persdb_examples',
+	   'persdb/datadir'
+         ],
+	 'factsdb/factsdb_doc'-[
+	   'factsdb/factsdb_rt'
+         ]
          ].
 
 % ---------------------------------------------------------------------------
@@ -292,38 +322,8 @@ docstr_interfaces :=
 	   'foreign_interface/build_foreign_interface'
          ],
 	 %
-	 'menu/menu_doc',
-	 'menu/menu_generator',
-	 %
 	 'davinci/davinci',
 	 %
-	 'http/http_doc'-[
-	   'http/http_client',
-	   'http/http_server',
-	   'http/url',
-	   'http/http_forms',
-	   'http/cgi',
-	   % (internal)
-	   'http/http_messages',
-	   'http/http_date',
-	   'http/http_grammar'
-	 ],
-	 %
-	 'pillow/pillow_doc'-[
-	   'pillow/html',
-	   'pillow/json',
-	   'pillow/color_space'
-         ],
-         %
-	 'persdb/persdb_rt'-[
-	   'persdb/persdb_examples',
-	   'persdb/datadir'
-         ],
-         %
-	 'factsdb/factsdb_doc'-[
-	   'factsdb/factsdb_rt'
-         ],
-         %
 	 'opendoc',
 	 %
 	 'emacs/emacs',

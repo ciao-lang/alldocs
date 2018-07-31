@@ -20,13 +20,13 @@ doc_structure :=
 	  (~docstr_getstarted),
 	  'DevEnv'-(~docstr_devenv),
 	  'BasicLang'-(~docstr_basiclang),
-	  'CompatProlog'-(~docstr_compatprolog),
-	  'StdLibs'-(~docstr_stdlibs),
 	  'AssrtLang'-(~docstr_assrtlang),
-	  'ExtraLibs'-(~docstr_extralibs),
 	  'ExtendLang'-(~docstr_extendlang),
-	  'Interfaces'-(~docstr_interfaces),
+	  'CompatProlog'-(~docstr_compatprolog),
 	  'DataStructuresAlgs'-(~docstr_datastructuresalgs),
+	  'StdLibs'-(~docstr_stdlibs),
+	  'ExtraLibs'-(~docstr_extralibs),
+	  'Interfaces'-(~docstr_interfaces),
  	  'Appendices'-(~docstr_appendices)
         ].
 

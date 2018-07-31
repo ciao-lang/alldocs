@@ -99,11 +99,11 @@ docstr_compatprolog :=
 	 'dec10_io',
 	 'old_database',
 	 'ttyout',
-	 'runtime_ops/runtime_ops_doc'].
+	 'runtime_ops/runtime_ops_doc',
+	 'listing'].
 
 docstr_classicprolog :=
-	[	 %
-	 % (Standard library)
+	[% (Standard library)
 	 %
 	 'default_predicates',
 	 %
@@ -114,10 +114,13 @@ docstr_classicprolog :=
 	 'aggregates',
 	 %
 	 'libpaths',
+	 %
+	 'assertions/assrt_lib',
 	 'compiler/compiler', % TODO: for dynamic compilation and code loading
 	 %
 	 'streams_basic', % engine
 	 'io_basic', % engine
+	 'tokenize',
 	 'read',
 	 'write',
 	 'operators',
@@ -143,19 +146,18 @@ docstr_annotatedprolog :=
 	 'basicmodes/basicmodes_doc'
 	].
 
-% 'fdtypes'
-%	'metatypes'
-%	'meta_props'
-
-% 'benchmarks/ecrc',
+% TODO: other libraries that are distributed but not ready:
+%   'metatypes'
+%   'meta_props'
+%   'loops'
+%   'parse_spec'
+%   'prompt'
 	 
 docstr_miscprolog :=
 	['getopts',
-	 'llists',
-	 'streams',
-	 'dict',
-	 'strings',
 	 'messages',
+	 %
+	 'streams',
 	 'io_alias_redirection',
 	 %
 	 'port_reify',
@@ -165,6 +167,7 @@ docstr_miscprolog :=
 	 %
 	 'ctrlcclean',
 	 'errhandle',
+	 %
 	 'fastrw',
 	 %
 	 'pathnames',
@@ -174,7 +177,6 @@ docstr_miscprolog :=
 	 'file_utils',
 	 'file_locks/file_locks',
 	 %
-	 'formulae',
 	 'terms',
 	 'terms_check',
 	 'terms_vars',
@@ -182,32 +184,39 @@ docstr_miscprolog :=
 	 %
 	 'modblobs/modblobs',
 	 %
+	 'formulae',
+	 % Pretty-printers
 	 'pretty_print',
 	 'assertions/assrt_write',
 	 %
 	 'librowser/librowser',
-	 %
+	 % Debugging
+	 'tracing/traces'-[
+           'byrdbox/byrd'
+         ],
+	 % Debugging packages
 	 'expansion_tools',
 	 %
 	 'concurrency/concurrency',
 	 'conc_aggregates',
+	 %
+	 'random/random',
 	 %
 	 'random_aggregates',
 	 %
 	 'sockets/sockets',
 	 'sockets/sockets_io',
          %
-	 % TODO: nest
 	 'system_extra',
 	 'process/process'-['process/process_channel'],
 	 %
-	 'glob',
 	 'source_tree/source_tree',
 	 %
 	 'archive_files',
 	 %
 	 'version_strings',
 	 %
+	 'glob',
 	 'regexp/regexp_doc'-['regexp/regexp_code'],
 	 'text_template',
 	 %
@@ -217,17 +226,6 @@ docstr_miscprolog :=
 	 %
 	 'diff'
 	 ].
-
-%    'tokenize',
-%     'assrt_lib',
-%     'byrd',
-% 	'traces',
-%     'events',
-%     'fly',
-%     'listing',
-%     'loops',
-%     'parse_spec',
-%     'prompt'
 
 % TODO: Document: those libraries may change the 'theory'
 docstr_extendprolog :=
@@ -281,9 +279,6 @@ docstr_extendprolog :=
 	 % 'fuzzy/fuzzy_doc', (moved to its own repo)
          ].
 
-% 'remote_doc',
-% 'mattr_global_doc'
-
 % TODO: menu is not an interface! (this is for interfaces to other languages)
 docstr_interfaces :=
 	['foreign_interface/foreign_interface_doc'-[
@@ -334,7 +329,11 @@ docstr_interfaces :=
 %   [1] https://xlinux.nist.gov/dads/HTML/dataStructure.html
 %   [2] https://xlinux.nist.gov/dads/HTML/abstractDataType.html
 docstr_datastructures :=
-	['arrays',
+	['llists',
+	 'dict',
+	 'strings',
+	 %
+	 'arrays',
 	 'assoc',
 	 'idlists',
 	 'numlists',
@@ -346,7 +345,6 @@ docstr_datastructures :=
 	 'graphs/lgraphs',
 	 %
 	 'queues',
-	 'random/random',
 	 'sets',
 	 'vndict',
 	 %

@@ -24,7 +24,7 @@ doc_structure :=
 	  'ClassicProlog'-(~docstr_classicprolog),
 	  'AssrtLang'-(~docstr_assrtlang),
 	  'ExtraLibs'-(~docstr_extralibs),
-	  'ExtendProlog'-(~docstr_extendprolog),
+	  'ExtendLang'-(~docstr_extendlang),
 	  'Interfaces'-(~docstr_interfaces),
 	  'DataStructuresAlgs'-(~docstr_datastructuresalgs),
  	  'Appendices'-(~docstr_appendices)
@@ -231,8 +231,7 @@ docstr_extralibs :=
 
 % ---------------------------------------------------------------------------
 
-% TODO: Document: those libraries may change the 'theory'
-docstr_extendprolog :=
+docstr_extendlang :=
 	['pure/pure_doc',
 	 % Higher order, interfaces, etc.
 	 'hiord_rt', % engine

@@ -2,9 +2,9 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART VII - Ciao extensions").
+:- doc(title,"PART VII - Language extensions").
 
 :- doc(author,"The Ciao Development Team").
 
-:- doc(module,"@include{ExtendProlog.lpdoc}").
+:- doc(module,"@include{ExtendLang.lpdoc}").
 

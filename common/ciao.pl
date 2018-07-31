@@ -126,9 +126,9 @@
 % 
 %          @include{ExtraLibs.lpdoc}
 % 
-%       @subsection{PART VII - Ciao extensions}
+%       @subsection{PART VII - Language extensions}
 % 
-%          @include{ExtendProlog.lpdoc}
+%          @include{ExtendLang.lpdoc}
 % 
 %       @subsection{PART VIII - Interfaces to other languages and systems}
 % 

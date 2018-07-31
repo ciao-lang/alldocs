@@ -1,0 +1,158 @@
+# General Advice
+
+## Q: How to undo the modifications I made on one file?
+
+Sometimes one may want to reverse the modifications done on one file.
+This may appear because the conflict on this file has been marked as
+solved (e.g., one only resolves with mergetool some of the conflicts in
+a file and then `git` assumes that all conflicts have been solved)
+or that the assumptions made to solve the conflicts were wrong.
+
+The command to revert the change made in a file `<file>` when resolving
+conflict is:
+
+```sh
+$ git checkout -- <filepath>
+```
+
+## Q: What is an automatic merge commit and how to avoid those?
+
+Automatic merge commits mess up with the changes history. Assume that
+while you were working on some feature in a separate branch, someone
+pushed a number of commits into the `master` and currently the repo
+looks like:
+
+```
+                        HEAD
+                          |
+1 -> 2 -> 3 -> 4  -> 5 -> 6
+          \
+           `-> 4b -> 5b
+```
+
+After a `git pull` you will have all commits in your repo, and in
+such case git usually creates an automatic merge that creates a new
+commit, such that 6->7 and 5b->7 (two parents).
+
+```
+                             HEAD
+                               |
+1 -> 2 -> 3 -> 4  -> 5 -> 6 -> 7
+          \                   /
+           `-> 4b -> 5b -----`
+```
+
+Whereas with `git pull --rebase` the merge commits could be avoided
+and the commit history would loks like:
+
+```
+1 -> 2 -> 3 -> 4  -> 5 -> 6         HEAD
+                          \          |
+                           `-> 4b -> 5b
+```
+
+# Merging Branches Manually
+
+This section describes some useful tips when merging branches in git.
+
+## Q: How can I reduce the number of merge conflicts? How can I ease future merges?
+
+There is no magic. To avoid conlicts, reduce conflict zone size and
+ease conflict resolution one has to make their code easy to merge,
+even if it works in `master`.  To do so one should keep in mind that
+merge process works line by line (i.e. a line that has diverged in
+both branches is considered as conflict).
+
+As merging branches is always more complicated than expected, consider
+again if a branch `mybranch` is really needed (e.g., if it can be
+replaced or combined with conditional compilation in C and Prolog to
+minimize the conflicts).
+
+## Q: How do I merge two branches?
+
+To merge into a branch, your `HEAD` should be at the branch you
+want to merge into. If you want to merge into `master` a branch of
+yours with a lot of changes, you should first merge `master` into
+your branch (resolve the potential conflicts) and then merge your
+branch in `master` (it should have no conflict). When merging you
+should have no uncommitted modifications in your `HEAD`, in general
+the cleaner your `HEAD` is the smoother the merge will be.
+
+E.g. To merge `master` into `<mybranch>` run:
+
+```sh
+$ get checkout <mybranch>
+$ get merge master
+```
+
+## Q: How to abort an uncommitted merge?
+
+```sh
+$ git reset --hard HEAD
+```
+
+## Q: What is the best tool to resolve merge conflict?
+
+When resolving conflicts it is highly recommended to use a tool that
+can show simultaneously all the different versions of the files
+involved in the merge:
+
+ - The older common ancestor (identified by `BASE`)
+ - The file in your `HEAD` before the merge (identified by
+   `LOCAL`)
+ - The file in the other branch (identified by `REMOTE`)
+ - The file resulting from the merging the two branches
+   (identified by the fact that it has the unmodified filename)
+
+Some Ciao developers recommend `meld` (which is available in most
+Linux distributions and can be installed using `macports` or
+`homebrew` in Mac OS X).
+
+To configure `git` to use `meld` for resolving conflicts add the
+following in your `.gitconfig`:
+
+```
+[merge]
+tool = mymeld
+[mergetool "mymeld"]
+cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+```
+
+Then, to resolve all the conflicts with `meld` just run:
+
+```sh
+$ git mergetool
+```
+
+You get a window with a lot of tabs.
+
+ - The two first tabs allow you to have a view of the history of the
+   file.  They show the pair `LOCAL`-`BASE` and the pair
+   `REMOTE`-`BASE`. This allows you to view how the file evaluated in
+   the two branches.
+
+ - The third tab is the most important one. It shows the result of the
+   merge (in the center) together with the `LOCAL` and the `REMOTE` in
+   left and the right hand side. You have to modified (and finally
+   save) the result of the merge (in the center column) of the third
+   tabs. For simple conflict, it should be enough to consider the
+   third tab only, but for complex conflict it is often necessary to
+   go to the historic tabs (the two first ones) to understand really
+   how the file diverges in the two branch and how it should be fix.
+
+\begin{alert}
+**Warning:** once you have save the file and quit `meld`, `git`
+considers the conflict has been resolved in this files, even if there is
+still mark in conflict in the head.
+\end{alert}
+
+## Q: What do I do after resolving a merge conflict ?
+
+Before committing your merge (even if there is no conflict), you
+should verify that everything is going well. You should compile the
+project from scratch. For instance, one library/predicate used by
+specific code of your branch may have changed name/location in the
+master. Also run the tests.
+
+If you do something else that just resolving syntactical conflicts,
+write details about those changes in the merge commit message.

@@ -1,0 +1,52 @@
+# Citations in documentation
+
+LPdoc allows citing and referencing papers specified in one or more
+`.bib` files.
+
+Please use citations for code that originated from (or was written
+together with) formal papers and technical reports. In such cases many
+details about the motivation, related work, design, technical details
+(and proofs) are not necessary within the source code documentation.
+
+Nowadays it is preferable to write code that works (and that is
+straightforward to use for the target audience) over producing
+over-detailed documentation that mixes irrelevant (for the user)
+implementation details with usage. In cases where the technical
+information does not fit into a paper, please describe it in clearly
+identified sections or parts of the manual.
+
+# Adding new bibtex entries
+
+If you need to add new bibtex entries please proceed as follow:
+
+ - add new entries to `clip.bib` or `general.bib` in the group's
+   bibtex SVN repo (the same as for papers):
+```
+svn+ssh://cliplab.org/home/clip/SvnReps/bibtex
+```
+
+ - generate the documentation (you should see some unresolved citations warnings)
+
+ - use the `update-common-bib.sh` script (follow instructions)
+   to update `common.bib`
+
+ - review the changes and commit the updated `common.bib` file
+
+# Future improvements
+
+Note that the instructions above may change in the future (e.g., we
+may generate a single .bib file for each bundle or move/integrate the
+script somewhere else).
+
+ - Generate and use a .bib per bundle.
+
+ - Integrate the script. This is a very specific feature that may not
+   be very useful for other Ciao users. Perhaps it fits better into
+   the helper helper programs used to generate distributions, publish
+   to github, etc.
+
+ - Parts of this functionality may fit into `bibutils`
+
+ - Use (our) `bibutils` instead of (third-party) `bibtool`
+
+

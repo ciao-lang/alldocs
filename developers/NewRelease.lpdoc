@@ -1,0 +1,39 @@
+Depending on the number changes, it may be necessary to raise the
+version number (see `GlobalVersion`, `GlobalPath`, `version/1` at
+`Manifest.pl`, etc.).
+
+Given an odd minor number version of the system (e.g., development
+`v1.1`), the release plan consists on selecting some new features,
+test and fix the system as required, compose a changelog, increment
+the version to an even number (e.g., stable `v1.2`), save this
+point in the source history, and increment again the version number to
+an odd number (e.g., development `v1.3`).
+
+This is detailed as follows:
+
+ - Identify the new features and important changes for the new release
+   (the changelog). This usually means going through the Git log and
+   grouping all the changes in a way similar to what appears in
+   `core/doc/CHANGELOG.pl` for previous versions.
+
+ - Iterate through: test existing, new, and improved features; check
+   that installation from source (both local and global installs, in
+   all supported platforms) work; check that distributions work; fix
+   bugs if needed, or postpone/drop new features.
+
+ - When in a satisfactory state, add an updated changelog to
+   `core/doc/CHANGELOG.pl` and increment the version number. Commit
+   and push the changes.
+
+ - Tag the commit (omit COMMIT_ID to use HEAD):
+   ```sh
+   git tag -a vMajor.Minor.Patch COMMIT_ID -m 'Version jumped to Major.Minor.Patch'
+   git push origin vMajor.Minor.Patch
+   ```
+
+ - Make sure that distributions are up-to-date, update the website,
+   brochure, and announce the release to `ciao-users` mailing list.
+
+ - Increment the version number again to an odd number for the new
+   development version.
+

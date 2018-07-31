@@ -1,0 +1,48 @@
+When identifying a potential bug please report to the corresponding
+mailing list (\email{ciao-bugs\@cliplab.org}) and specify enough
+information to reproduce the problem:
+
+- affected code (e.g., bundle) and your configuration;
+- specify your machine, operating system, compiler version, etc.;
+- try to generate (if possible) a minimal working example (MWE);
+- check (if possible) that it is not a duplicate;
+
+Bugs are preferably stored at each bundle with the following structure:
+
+```
+BUNDLENAME/bugs/
+├── NODISTRIBUTE
+├── Fixed
+├── ...more specific directories...
+└── Unclassified
+```
+
+For example, the `bugs` directory of the `core` bundle look like:
+
+```
+CIAOROOT/core/bugs/
+├── Fixed
+├── NODISTRIBUTE
+├── Pending
+├── Performance
+└── Unclassified
+```
+
+For internal development bugs may also be filed at our Phabricator site (as
+tasks). Bugs may also be filed as github issues, although we recommend
+the other channels mentioned above.
+
+Once fixed, bugs are moved to the `bugs/Fixed/` sub-directory.
+
+\comment{
+% # Fixing bugs
+%
+% For fixing a bug follow these steps:
+%
+% 1. Find an appropriate Task in Phabricator
+% 2. Submit a Diff that includes a bug fix
+% 3. When landing the approved Diff make sure to move the bug MWE to the
+%    `bugs/Fixed` sub-directory.
+}
+
+

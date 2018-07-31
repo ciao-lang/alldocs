@@ -1,0 +1,74 @@
+# Coding style for Ciao code
+
+- Keep line width less than 80 characters (if possible).
+
+- Do not have lines ending with spaces or tabs (trailing
+  whitespace).
+
+- Any file should be ended by a new line.
+
+- Use spaces instead of tabulations.
+
+- Avoid predicates with same name but different arity.
+
+- Use descriptive module names, specially in libraries (to avoid clash
+  with user-defined modules, since module names are global).
+
+- Similarly use descriptive names for multifile predicates (they are
+  global).
+
+- When possible enumerate imported predicates explicitly.
+
+- When contributing bug reports, they are typically stored at
+  `<bundle>/bugs/Pending`. When fixed, bug entries are moved to
+  `<bundle>/bugs/Fixed`. Place at `<bundle>/bugs/Unclassified`
+  potential bugs whose status may be unknown.
+
+# Coding style for C Code
+
+- In general, avoid `inline` functions (see [Linux Kernel Coding
+  Style](https://www.kernel.org/doc/Documentation/CodingStyle)) --
+  unless you can collect evidence that they produce optimal code (size
+  and speed) with the state of the art C compilers.
+
+- Use macros (even big ones) when you need to inline code. A macro is
+  much better than duplicated code.
+
+- Do not use comma at the statement level (e.g. `int a, b;` or `foo(),
+  bar();`) since that confuses the CPP macro expansion (when that code
+  is wrapped inside `\{\}` and passed as argument).
+
+- `goto` is not harmful for low level code (specially for
+  automatically generated code).
+
+# Some helper Emacs tools
+
+To highlight trailing whitespaces you can either:
+
+  - use the `highlight-chars` emacs package (available at MELPA) and
+    add the following lines in your `.emacs`:
+
+```lisp
+;; ---------------------------------------------------------------------------
+;; highlight tabs and trailing whitespace
+(require 'highlight-chars)
+(add-hook 'font-lock-mode-hook 'hc-highlight-tabs)
+(add-hook 'font-lock-mode-hook 'hc-highlight-trailing-whitespace)
+```
+
+  - toggle the `Show Trailing Whitespace` option on, which can be
+    found at `Options > Customize Emacs > Browse Customization Groups`
+    below:
+
+```
+[-]-\ Group Emacs
+   [-]-\ Group Editing
+    | [-]-\ Group Editing Basics
+    |     `--- Option Show Trailing Whitespace
+```
+
+It is not adviced to remove trailing whitespace automatically since
+this can mess up the diff of your changes (and potentially lead to
+merge conflicts later on).
+
+

@@ -1,0 +1,155 @@
+# Testing your changes
+
+After you make any changes please check thoroughly that nothing has
+stopped working. Specifically,
+
+ - Make sure that the documentation is up-to-date and correctly
+   generated.
+
+ - Verify that new features have their associated tests.
+
+ - Run automated tests (`ciao test`).
+
+ - Run other tests in the `testsuite` bundle.
+
+ - Try out, to the extent possible, examples and code without
+   automated tests, as well as tests from third-party code that
+   depends on Ciao.
+
+# Testing documentation
+
+The documentation should be as complete and correct as possible.
+Please check that every change you do can be documented (introducing
+syntactic errors is easy).  In order to generate the documentation:
+
+ - Make sure that there are no (new) error/warnings in the output of
+   `ciao build --docs`
+
+ - Verify that the documentation has been generated correctly.  It
+   should appear under `<CIAODIR>/build/doc` in `.info`, `.pdf`, and
+   HTML formats.  Have a look at it, verify that the links (in info
+   and HTML formats) are not dead.
+
+ - Check that every library in the distribution has a well-formed
+   manual page. A component should appear here iff it goes into the
+   distribution; otherwise the documentation will be out of sync with
+   respect to the distribution.
+
+# Generating and testing distributions
+
+See the @tt{ciao-distro-tools} bundle to learn how we produce
+@em{multirepostory} source distributions from the development
+@em{monorepository}.
+
+## Generating a distribution
+
+`ciao` (super-command) offers some commands to generate packaged
+bundles for several platforms with the command
+`gen_pbundle --kind=Kind`, where `Kind` is one of:
+
+ - `win32`: Creates a Windows installer.
+
+ - `rpm [--option=value...]`: Creates an `RPM` package. For more
+	details please read the documentation for the `gen_pbundle --kind=rpm`
+	module. One or more options may be added; main ones are:
+
+	- `vendor_independent=yes` :: Creates packages that should work in
+	  all mainstream `RPM` Linux distributions.  This is the default.
+	  If disabled, packages are only guaranteed to work in the same
+	  distribution (vendor) they were generated for.
+
+ - `bin`: Creates the binary packages (using `gz` and `bzip2`).
+
+ - `bin_tgz`: Creates the binary package compressed using `gz`.
+
+ - `bin_tbz`: Creates the binary package compressed using `bzip2`.
+
+ - `src`: Creates the `tar` packages in `gz` and `bzip2` compressed
+	formats.
+
+ - `tgz`: Creates the `tar` packages in `gz` compressed format.
+
+ - `tbz`: Creates the `tar` packages in `bzip2` compressed format.
+
+@bf{Note:} distribution generation may ignore some files under the
+source tree based on some marks (`NOCOMPILE`, `NODISTRIBUTE`,
+`NOINSTALL`, etc.). See a more complete description of at
+\lib{library(source_tree)}.
+
+## Testing a distribution
+
+Distributions should be installed and tested in clean environments.
+Ideally, this means using a machine with no Ciao installed.
+Otherwise, you should clear your environment variables of any trace of
+paths and environment variables pointing to Ciao stuff.  'which ciao'
+will point to executables -- remove from `PATH` the corresponding
+paths. Any environment variable starting by `CIAO` (`env | grep CIAO`)
+should also be removed prior to compilation.
+
+We **must** compile and test in all supported architectures.
+
+Perform the installation **exactly** as it is stated in the
+`INSTALLATION` file. 
+
+For global installations, compile and install under a user and test
+with another user, in order to make sure that everything gets compiled
+and needed.  You can make the installation as root and the testing as
+yourself.  Make sure every step of the installation works.
+
+Some (OS-specific) additional tests:
+
+ - Compile and run the tests, and check that everything works.
+
+ - All commands (`ciao`, `ciaosh`, `ciaoc`, etc.) must be reachable
+   and they must belong to the distribution we have installed.
+
+ - Windows: from windows file explorer: check left-button menus
+
+   - `.pl` files: load `foo.pl` into top-level shell and make
+     executable (must generate `foo.bat` and `foo.cpx` files)
+
+   - `.bat` and `.cpx` generated files: double-click on them and
+     check that foo program works
+
+ - Unix-like systems:
+
+   - The `ciao-env` command should be patched with valid paths (it is
+     used from the shell initialization files).
+
+   - Check that the info file works well.  This can be done executing
+     `info` and verifying that an info entry for Ciao has been placed,
+     and also running `info ciao`. It should also be visible with `M-x
+     info` from emacs.
+
+   - Execute `man ciao` to check that the man page has been
+     generated and configured successfully.
+
+   - `ciao doc BUNDLE` should open the HTML manuals for BUNDLE
+
+   - `.pdf` files must also be in place. 
+
+Other tests specific to the Emacs Mode:
+
+ - Verify (`C-h i`) that the Ciao info files _for the version you installed_
+   are visible.
+
+ - Load `<CIAODIR>/examples/hw.pl`, check that buffer coloring works
+   (substitute the Ciao path by the directory where the sources you
+   dowloaded are).
+
+ - Check that the Ciao menu options and tool bar appear on top of
+   Emacs window.
+
+ - `C-c l` to load the file into Ciao top-level and call `main/1`
+   to check basic top-level functionality.
+
+ - Put the cursor over `write/1` and hit `C-c tab` to go to the Ciao
+   documentation (in info format).
+
+ - Load `hw.pl` in debug mode (`C-c d`), run `main/1`, go through the
+   execution until its end.
+
+ - Move the cursor to last line of `main/0`, and do `C-c S b` to
+   check breakpoints. Run `main/1` again, and press `l` to check that
+   the execution stops at the correct program point.
+

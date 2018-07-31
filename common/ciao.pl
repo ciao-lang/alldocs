@@ -114,9 +114,9 @@
 % 
 %          @include{AssrtLang.lpdoc}
 % 
-%       @subsection{PART IV - Classic Prolog library (classic)}
+%       @subsection{PART IV - Standard libraries}
 % 
-%          @include{ClassicProlog.lpdoc}
+%          @include{StdLibs.lpdoc}
 % 
 %       @subsection{PART V - Compatibility}
 % 

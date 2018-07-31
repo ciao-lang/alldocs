@@ -21,7 +21,7 @@ doc_structure :=
 	  'DevEnv'-(~docstr_devenv),
 	  'BasicLang'-(~docstr_basiclang),
 	  'CompatProlog'-(~docstr_compatprolog),
-	  'ClassicProlog'-(~docstr_classicprolog),
+	  'StdLibs'-(~docstr_stdlibs),
 	  'AssrtLang'-(~docstr_assrtlang),
 	  'ExtraLibs'-(~docstr_extralibs),
 	  'ExtendLang'-(~docstr_extendlang),
@@ -107,7 +107,7 @@ docstr_compatprolog :=
 
 % ---------------------------------------------------------------------------
 
-docstr_classicprolog :=
+docstr_stdlibs :=
 	[% (Standard library)
 	 %
 	 'default_predicates',

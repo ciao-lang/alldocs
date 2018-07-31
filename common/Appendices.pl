@@ -6,4 +6,4 @@
 
 :- doc(author,"The Ciao Development Team").
 
-:- doc(module,"@include{Append.lpdoc}").
+:- doc(module,"@include{Appendices.lpdoc}").

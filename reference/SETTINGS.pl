@@ -27,7 +27,7 @@ doc_structure :=
 	  'ExtendProlog'-(~docstr_extendprolog),
 	  'Interfaces'-(~docstr_interfaces),
 	  'DataStructures'-(~docstr_datastructures),
- 	  'Append'-(~docstr_installation)
+ 	  'Appendices'-(~docstr_installation)
         ].
 
 docstr_getstarted :=

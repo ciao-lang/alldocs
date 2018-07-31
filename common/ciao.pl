@@ -137,7 +137,7 @@
 
       @subsection{PART X - Appendices}
 
-         @include{Append.lpdoc}
+         @include{Appendices.lpdoc}
 
 
    @section{Acknowledgments} 

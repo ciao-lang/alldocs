@@ -16,22 +16,11 @@ point. Using these features, the Ciao distribution includes libraries
 which significantly extend the language both syntactically and
 semantically.
 
-@comment{Given that the final version of the ISO standard has only
-been recently published,} 
-
-Compliance with ISO is still not complete: currently there are some
-minor deviations in, e.g., the treatment of characters, the syntax,
-some of the arithmetic functions, and part of the error system. On the
-other hand, Ciao has been reported by independent sources (members of
-the standarization body) to be one of the most conforming Prologs at
-the moment of this writing, and the first one to be able to compile
-all the standard-conforming test cases.  Also, Ciao does not offer a
-strictly conforming mode which rejects uses of non-ISO
-features. However, in order to aid programmers who wish to write
-standard compliant programs, library predicates that correspond to
-those in the ISO-Prolog standard are marked specially in the manuals,
-and differences between the Ciao and the prescribed ISO-Prolog
-behaviours, if any, are commented appropriately.
+In order to aid programmers who wish to write standard compliant
+programs, library predicates that correspond to those in the
+ISO-Prolog standard are marked specially in the manuals, and
+differences between the Ciao and the prescribed ISO-Prolog behaviours,
+if any, are commented appropriately.
 
 The intention of the Ciao developers is to progressively complete the
 compliance of Ciao with the published parts of the ISO standard as

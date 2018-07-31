@@ -90,56 +90,6 @@
 
       @include{Conventions.lpdoc}
 
-   @section{A tour of the manual}
-   @cindex{manual, tour}
-   @cindex{tour, of the manual}
-
-   The rest of the introductory chapters after this one provide a
-   first ``getting started'' introduction for newcomers to the Ciao
-   system. The rest of the chapters in the manual are organized into a
-   sequence of major parts as follows:
-
-      @subsection{PART I - The program development environment}
-
-         @include{DevEnv.lpdoc}
-
-      @subsection{PART II - The Ciao basic language}
-
-         @include{BasicLang.lpdoc}
-
-      @subsection{PART III - Assertions}
-
-         @include{AssrtLang.lpdoc}
-
-      @subsection{PART IV - Classic Prolog library (classic)}
-
-         @include{ClassicProlog.lpdoc}
-
-      @subsection{PART V - Compatibility}
-
-         @include{CompatProlog.lpdoc}
-
-      @subsection{PART VI - Additional libraries}
-
-         @include{ExtraLibs.lpdoc}
-
-      @subsection{PART VII - Ciao extensions}
-
-         @include{ExtendProlog.lpdoc}
-
-      @subsection{PART VIII - Interfaces to other languages and systems}
-
-         @include{Interfaces.lpdoc}
-
-      @subsection{PART IX - Data structures and algorithms}
-
-         @include{DataStructuresAlgs.lpdoc}
-
-      @subsection{PART X - Appendices}
-
-         @include{Appendices.lpdoc}
-
-
    @section{Acknowledgments} 
    @cindex{acknowledgments}
 
@@ -149,8 +99,58 @@
 
 % TODO: This file is not using the special acknowledgments section.
 
+%    @section{A tour of the manual}
+%    @cindex{manual, tour}
+%    @cindex{tour, of the manual}
+% 
+%    The rest of the introductory chapters after this one provide a
+%    first ``getting started'' introduction for newcomers to the Ciao
+%    system. The rest of the chapters in the manual are organized into a
+%    sequence of major parts as follows:
+% 
+%       @subsection{PART I - The program development environment}
+% 
+%          @include{DevEnv.lpdoc}
+% 
+%       @subsection{PART II - The Ciao basic language}
+% 
+%          @include{BasicLang.lpdoc}
+% 
+%       @subsection{PART III - Assertions}
+% 
+%          @include{AssrtLang.lpdoc}
+% 
+%       @subsection{PART IV - Classic Prolog library (classic)}
+% 
+%          @include{ClassicProlog.lpdoc}
+% 
+%       @subsection{PART V - Compatibility}
+% 
+%          @include{CompatProlog.lpdoc}
+% 
+%       @subsection{PART VI - Additional libraries}
+% 
+%          @include{ExtraLibs.lpdoc}
+% 
+%       @subsection{PART VII - Ciao extensions}
+% 
+%          @include{ExtendProlog.lpdoc}
+% 
+%       @subsection{PART VIII - Interfaces to other languages and systems}
+% 
+%          @include{Interfaces.lpdoc}
+% 
+%       @subsection{PART IX - Data structures and algorithms}
+% 
+%          @include{DataStructuresAlgs.lpdoc}
+% 
+%       @subsection{PART X - Appendices}
+% 
+%          @include{Appendices.lpdoc}
+
 %% --------------------------------------------------------------------------- 
 
 :- doc(version_maintenance,dir('../../core/Manifest')).
 :- include(core_docsrc('CHANGELOG')).
+
 

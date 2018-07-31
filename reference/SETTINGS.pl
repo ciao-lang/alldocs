@@ -150,7 +150,9 @@ docstr_assrtlang :=
 	 'assertions/native_props',
 	 %
 	 'isomodes/isomodes_doc',
-	 'basicmodes/basicmodes_doc'
+	 'basicmodes/basicmodes_doc',
+	 %
+	 'doccomments/doccomments_doc'
 	].
 	 
 % ---------------------------------------------------------------------------

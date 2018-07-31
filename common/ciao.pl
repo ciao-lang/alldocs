@@ -131,9 +131,9 @@
 
          @include{Interfaces.lpdoc}
 
-      @subsection{PART IX - Data structures}
+      @subsection{PART IX - Data structures and algorithms}
 
-         @include{DataStructures.lpdoc}
+         @include{DataStructuresAlgs.lpdoc}
 
       @subsection{PART X - Appendices}
 

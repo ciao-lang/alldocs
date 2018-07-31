@@ -26,7 +26,7 @@ doc_structure :=
 	  'ExtraLibs'-(~docstr_extralibs),
 	  'ExtendProlog'-(~docstr_extendprolog),
 	  'Interfaces'-(~docstr_interfaces),
-	  'DataStructures'-(~docstr_datastructures),
+	  'DataStructuresAlgs'-(~docstr_datastructuresalgs),
  	  'Appendices'-(~docstr_appendices)
         ].
 
@@ -112,8 +112,6 @@ docstr_classicprolog :=
 	 %
 	 'default_predicates',
 	 %
-	 'lists',
-	 'sort',
 	 'between',
 	 %
 	 'aggregates',
@@ -122,14 +120,16 @@ docstr_classicprolog :=
 	 %
 	 'assertions/assrt_lib',
 	 'compiler/compiler', % TODO: for dynamic compilation and code loading
-	 %
+	 % Streams (IO)
 	 'streams_basic', % engine
 	 'io_basic', % engine
+	 % Read/write terms
 	 'tokenize',
 	 'read',
 	 'write',
 	 'operators',
 	 'format',
+	 % Message printing
 	 'io_aux', % engine
 	 %
 	 'system',
@@ -191,6 +191,8 @@ docstr_extralibs :=
 	 'pretty_print',
 	 'assertions/assrt_write',
 	 %
+	 'syntax_highlight/syntax_highlight',
+	 %
 	 'librowser/librowser',
 	 % Debugging
 	 'tracing/traces'-[
@@ -224,9 +226,7 @@ docstr_extralibs :=
 	 %
 	 'parse_shell_args',
 	 %
-	 'symfnames/symfnames',
-	 %
-	 'diff'
+	 'symfnames/symfnames'
 	 ].
 
 % ---------------------------------------------------------------------------
@@ -336,29 +336,32 @@ docstr_interfaces :=
 % Theses are data structures (in the sense of [1]), implementing some ADTs [2]
 %   [1] https://xlinux.nist.gov/dads/HTML/dataStructure.html
 %   [2] https://xlinux.nist.gov/dads/HTML/abstractDataType.html
-docstr_datastructures :=
-	['llists',
-	 'dict',
-	 'strings',
-	 %
-	 'arrays',
-	 'assoc',
+docstr_datastructuresalgs :=
+	[% Lists and strings
+	 'lists',
+	 'sort',
+	 'llists',
 	 'idlists',
 	 'numlists',
-%	 'patterns',
-
+	 'strings',
+	 'fuzzy_search/fuzzy_search',
+	 'diff',
+	 % Maps
+	 'dict',
+	 'vndict',
+	 'arrays',
+	 'assoc',
+	 'keys', % TODO: document/merge
+	 % Graphs
 	 'graphs/graphs',
 	 'graphs/ugraphs',
 	 % 'graphs/wgraphs', % it was a verbatim copy of lgraphs using X is min(A,B) instead of min/3
 	 'graphs/lgraphs',
-	 %
+	 % Queues
 	 'queues',
+	 % Sets
 	 'sets',
-	 'vndict',
-	 %
-	 % TODO: review
-	 'bitcodesets',
-	 'keys', % TODO: document/merge
+	 'bitcodesets', % TODO: review
 	 'lsets' % TODO: document/merge
         ].
 

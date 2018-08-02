@@ -120,7 +120,7 @@ docstr_stdlibs :=
 	 %
 	 'assertions/assrt_lib',
 	 'compiler/compiler', % TODO: for dynamic compilation and code loading
-	 % Streams (IO)
+	 % Streams and I/O
 	 'streams_basic', % engine
 	 'io_basic', % engine
 	 % Read/write terms
@@ -129,6 +129,8 @@ docstr_stdlibs :=
 	 'write',
 	 'operators',
 	 'format',
+	 % Some useful I/O predicates
+	 'file_utils', % TODO: better name?
 	 % Message printing
 	 'io_aux', % engine
 	 %
@@ -178,7 +180,6 @@ docstr_extralibs :=
 	 %
 	 'counters',
 	 %
-	 'file_utils',
 	 'file_locks/file_locks',
 	 %
 	 'terms',

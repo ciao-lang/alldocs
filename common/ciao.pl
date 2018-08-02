@@ -14,17 +14,13 @@
 :- doc(subtitle_extra,"@em{Generated/Printed on:} @today{}").
 :- doc(subtitle_extra,"Technical Report CLIP 3/97-@version{}").
 
-% TODO: Replace 'credits' by 'editor'? (JFMC)
+% (editors for this version; not necessarily the authors)
 :- doc(credits, "@bf{Edited by:}").
 :- doc(credits, "Francisco Bueno").
-% :- doc(credits, "Daniel Cabeza").
 :- doc(credits, "Manuel Carro").
-:- doc(credits, "R@'{e}my Haemmerl@'{e}").
 :- doc(credits, "Manuel Hermenegildo").
 :- doc(credits, "Pedro L@'{o}pez").
-:- doc(credits, "Edison Mera").
 :- doc(credits, "Jos@'{e} F. Morales").
-:- doc(credits, "Germ@'{a}n Puebla").
 
 :- include(ciao_docsrc(common/'ClipAddress')).
 :- include(ciao_docsrc(common/'Copyright')).

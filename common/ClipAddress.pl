@@ -7,7 +7,7 @@
 :- doc(address, "Implementation, and Parallelism (CLIP) Lab").
 %% :- doc(address, "The CLIP Group").
 :- doc(address, "@href{https://www.cliplab.org/}").
-:- doc(address, "@email{webmaster@@clip.dia.fi.upm.es}").
+%:- doc(address, "@email{webmaster@@clip.dia.fi.upm.es}").
 %:- doc(address, "School of CS, Technical University of Madrid"). 
 :- doc(address, "School of CS, T. U. of Madrid (UPM)"). 
 % :- doc(address, "CS and ECE Departments, University of New Mexico").

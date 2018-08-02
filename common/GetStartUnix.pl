@@ -9,10 +9,10 @@
 :- doc(module,"
 
 This part guides you through some very basic first steps with Ciao on
-Unix-style systems (e.g., Linux, Mac OsX, etc.).  It assumes that Ciao
-is already installed correctly on your Unix system. If this is not the
-case, then follow the instructions in @ref{Installing Ciao from the
-source distribution} first.
+a Unix system.  It assumes that Ciao is already installed
+correctly on your Unix system. If this is not the case, then follow
+the instructions in @ref{Installing Ciao from the source distribution}
+first.
 
 We start with by describing the basics of using Ciao from a normal
 command shell such as @tt{sh/bash}, @tt{csh/tcsh}, etc. We strongly

@@ -74,9 +74,8 @@
    @cindex{references, to Ciao}
 
    If you find Ciao or any of its components useful, we would
-   appreciate very much if you added a reference to this manual (i.e.,
-   the Ciao reference manual @cite{ciao-reference-manual-tr}) in your
-   work. The following is an appropriate BiBTeX entry with the
+   appreciate very much if you added a reference to this manual in
+   your work. The following is an appropriate BiBTeX entry with the
    relevant data:
 
 @noindent

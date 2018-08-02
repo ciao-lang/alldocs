@@ -1,6 +1,5 @@
 The libraries documented in this part extend and modify the Ciao
 language in several different ways. The extensions include:
-
 @begin{itemize}
 @item restricted languages (@concept{pure Prolog} programming);
 @item @concept{constraint logic programming};

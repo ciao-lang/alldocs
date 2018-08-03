@@ -130,7 +130,7 @@ docstr_stdlibs :=
 	 'operators',
 	 'format',
 	 % Some useful I/O predicates
-	 'file_utils', % TODO: better name?
+	 'streams_utils',
 	 % Message printing
 	 'io_aux', % engine
 	 %

@@ -72,10 +72,6 @@ docstr_basiclang :=
 	 'term_basic', % engine
 	 'term_compare', % engine
 	 'atomic_basic', % engine
-	 'attr/attr_doc' - [
-           'attr/attr_rt',
-           'attributes' % engine
-         ],
 	 'arithmetic', % engine
 	 % (Dynamic database)
 	 'data_facts', % engine
@@ -265,9 +261,6 @@ docstr_extendlang :=
 	 % Records and functional notation
 	 'argnames/argnames_doc',
 	 'fsyntax/fsyntax_doc',
-	 'lazy/lazy_doc'-[
-	   'lazy/lazy_lib'
-         ],
 	 % DCGs % TODO: add implicits/fluids
 	 'dcg/dcg_doc'-['dcg/dcg_phrase_doc'],
 	 % Mutables and implicits (globals)
@@ -275,6 +268,11 @@ docstr_extendlang :=
 	 'mutables',
 	 %
 	 'odd', % setarg/3, undo/1 % TODO: rename pred
+	 % Attributed variables (used by other extensions)
+	 'attr/attr_doc' - [
+           'attr/attr_rt',
+           'attributes' % engine
+         ],
 	 % Control and evaluation strategy
 	 'indexer/indexer_doc',
 	 'block/block_doc',
@@ -283,6 +281,9 @@ docstr_extendlang :=
 	 'andorra/andorra_doc',
 	 'det_hook/det_hook_doc'-[
 	   'det_hook/det_hook_rt'
+         ],
+	 'lazy/lazy_doc'-[
+	   'lazy/lazy_lib'
          ],
 	 % TODO: undo/1 should be here
 	 % Concurrency and distributed

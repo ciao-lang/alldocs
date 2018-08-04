@@ -105,7 +105,7 @@
 % 
 %          @include{BasicLang.lpdoc}
 % 
-%       @subsection{PART III - Assertions}
+%       @subsection{PART III - Assertions and auto-documentation}
 % 
 %          @include{AssrtLang.lpdoc}
 % 

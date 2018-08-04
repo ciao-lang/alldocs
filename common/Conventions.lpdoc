@@ -35,13 +35,6 @@ the text of this manual: when a string is being used as an atom it is
 written thus: @tt{user} or @tt{'user'}; but in all other circumstances
 double quotes are used (as in @tt{"hello"}).
 
-@cindex{keyboard} When referring to keyboard characters, printing
-characters are written thus: @key{a}, while control characters are
-written like this: @key{^A}.  Thus @key{^C} is the character you get by
-holding down the @key{CTL} key while you type @key{c}.  Finally, the
-special control characters carriage-return, line-feed and space are
-often abbreviated to @key{RET}, @key{LFD} and @key{SPC} respectively.
-
 @subsection{Predicate specs}
 
 Predicates are distinguished by their name @em{and} their arity.  We

@@ -1,26 +1,27 @@
 This part documents the components of the basic Ciao program
-development environment.  They include:
+development environment. They include:
 
    @begin{description}
 
    @item{ciao:} the Ciao @em{super-command}, which invokes the
-   toplevel or the build system for @concept{bundle} management.
-
-   @item{ciaoc:} the standalone compiler, which creates executables
-   without having to enter the interactive top-level.
+   toplevel, compiler, or the build system for @concept{bundle}
+   management.
 
    @item{ciaosh:} (also invoked simply as @tt{ciao}) is an interactive
    top-level shell, similar to the one found on most Prolog systems
-   (with some enhancements). 
+   (with some enhancements). It is @em{embeddable}, in the sense that
+   it can be included as a library in executables.
 
    @item{debugger:} a Byrd box-type debugger, similar to the one found
    on most Prolog systems (also with some enhancements, such as
    source-level debugging). This is not a standalone application, but
-   is rather included in @apl{ciaosh}, as is done in other systems
+   is rather available from @apl{ciaosh}, as is done in other systems
    supporting the Prolog language. However, it is also
-   @em{embeddable}, in the sense that it can be included as a library
-   in executables, and activated dynamically and conditionally while
-   such executables are running.
+   @em{embeddable}, and it can be activated dynamically and
+   conditionally while running executables.
+
+   @item{ciaoc:} the standalone compiler, which creates executables
+   without having to enter the interactive top-level.
 
    @item{ciao-shell:} an interpreter/compiler for @em{Ciao scripts}
    (i.e., files containing Ciao code which run without needing

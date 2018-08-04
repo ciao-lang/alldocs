@@ -39,10 +39,10 @@ docstr_getstarted :=
 % ---------------------------------------------------------------------------
 
 docstr_devenv :=
-	['builder_doc',
-	 'ciaoc',
-	 'toplevel/toplevel_doc',
+	['toplevel/toplevel_doc',
 	 'debugger/debugger_doc'-['debugger/debugger'],
+	 'builder_doc',
+	 'ciaoc',
 	 'ciao-shell',
 	 'ciao-utilities'-(~docstr_utils),
 	 'CiaoMode'].

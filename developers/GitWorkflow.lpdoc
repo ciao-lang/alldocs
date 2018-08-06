@@ -106,7 +106,7 @@ involved in the merge:
 
 Some Ciao developers recommend `meld` (which is available in most
 Linux distributions and can be installed using `macports` or
-`homebrew` in Mac OS X).
+`homebrew` in macOS).
 
 To configure `git` to use `meld` for resolving conflicts add the
 following in your `.gitconfig`:

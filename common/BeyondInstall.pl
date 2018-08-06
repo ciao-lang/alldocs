@@ -31,7 +31,7 @@
 % @item{LINUX:}     multithreading, shared DB access, and locking working.
 % @item{FreeBSD:}   multithreading, shared DB access, and locking working.
 % @item{Win32:} multithreading, shared DB access, and locking working.
-% @item{Mac OS X (Darwin):}  multithreading, shared DB access, and locking working. 
+% @item{macOS (Darwin):}  multithreading, shared DB access, and locking working. 
 % @item{Solaris:}   multithreading, shared DB access, and locking working.
 % @end{description}
 % 

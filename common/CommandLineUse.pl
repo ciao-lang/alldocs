@@ -12,7 +12,7 @@
 @cindex{top-level shell, starting}
 
       The basic methods for starting/exiting the top-level shell have
-      been discussed above.  If upon typing @tt{ciao} you get a
+      been discussed before.  If upon typing @tt{ciao} you get a
       ``command not found'' error or you get a longer message from
       Ciao before starting, it means that either Ciao was not
       installed correctly or you environment variables are not set up
@@ -25,7 +25,7 @@
 @cindex{help}
 
       The basic methods for accessing the manual on-line have also
-      been discussed above. Use the table of contents and the indices
+      been discussed before. Use the table of contents and the indices
       of @em{predicates}, @em{libraries}, @em{concepts}, etc. to find
       what you are looking for. @concept{Context-sensitive} help is
       available within the @apl{emacs} environment (see below).

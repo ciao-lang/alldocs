@@ -2,40 +2,14 @@
 
 :- doc(filetype, documentation).
 
-:- doc(title,"Getting started on Unix machines").
+:- doc(title,"Using Ciao from the command line").
 
 :- doc(author,"Manuel Hermenegildo").
 
 :- doc(module,"
+@section{Starting/exiting the top-level shell}
 
-This part guides you through some very basic first steps with Ciao on
-Unix-style systems (e.g., Linux, Mac OsX, etc.).  It assumes that Ciao
-is already installed correctly on your Unix system. If this is not the
-case, then follow the instructions in @ref{Installing Ciao from the
-source distribution} first.
-
-We start with by describing the basics of using Ciao from a normal
-command shell such as @tt{sh/bash}, @tt{csh/tcsh}, etc. We strongly
-recommend reading also @ref{An introduction to the Ciao emacs
-environment (Unix)} for the basics on using Ciao under @apl{emacs},
-which is a much simpler and much more powerful way of developing Ciao
-programs, and has the advantage of offering an almost identical
-environment under Unix and Windows.
-
-@section{Testing your Ciao Unix installation}
-
-@noindent It is a good idea to start by performing the tests in
-@ref{Checking for correct installation on Unix} to check that Ciao is
-installed correctly on your system (these are the same tests that you
-are instructed to do during installation, so you can obviously skip
-them if you have done them already at that time). If any of these
-tests do not succeed please review the installation instructions.
-
-@section{Using Ciao from a Unix command shell}
-
-@subsection{Starting/exiting the top-level shell (Unix)}
-
-@cindex{top-level shell, starting, unix}
+@cindex{top-level shell, starting}
 
       The basic methods for starting/exiting the top-level shell have
       been discussed above.  If upon typing @tt{ciao} you get a
@@ -46,9 +20,9 @@ tests do not succeed please review the installation instructions.
       or refer to the installation instructions regarding user-setup
       for details.
 
-@subsection{Getting help (Unix)}
+@section{Getting help}
 
-@cindex{help, unix}
+@cindex{help}
 
       The basic methods for accessing the manual on-line have also
       been discussed above. Use the table of contents and the indices
@@ -57,7 +31,7 @@ tests do not succeed please review the installation instructions.
       available within the @apl{emacs} environment (see below).
 
 
-@subsection{Compiling and running programs (Unix)}
+@section{Compiling and running programs}
 
 @cindex{compiling programs}
 @cindex{loading programs}
@@ -102,7 +76,7 @@ tests do not succeed please review the installation instructions.
 
       For more information see @ref{The interactive top-level shell}.
 
-@subsection{Generating executables (Unix)}
+@section{Generating executables}
 
 @cindex{executables, generating}
 @cindex{compiling programs}
@@ -128,15 +102,24 @@ tests do not succeed please review the installation instructions.
       a shell (or double-clicking on the icon from a graphical window)
       should execute it.
 
+@comment{
+      Another way of creating Ciao executables from source files is by
+      right-clicking on @tt{.pl} files and choosing ``make
+      executable''. This uses the standalone compiler (this has the
+      disadvantage, however, that it is sometimes difficult to see the
+      error messages).
+}
+
       For more information see @ref{The interactive top-level shell}
       and @ref{The standalone command-line compiler}.
 
-@subsection{Running Ciao scripts (Unix)}
+@section{Running Ciao scripts}
 
 @cindex{scripts}
 @cindex{compiling programs}
 @cindex{running programs}
 
+@comment{Double-clicking on files ending in @tt{.pls},}
       Ciao allows writing @concept{scripts}. These are files
       containing Ciao source but which get executed without having
       to explicitly compile them (in the same way as, e.g., @tt{.bat}
@@ -156,7 +139,7 @@ tests do not succeed please review the installation instructions.
 
       For more information see @ref{The script interpreter}.
 
-@subsection{The Ciao initialization file (Unix)}
+@section{The Ciao initialization file}
 
 @cindex{.ciaorc}
 @cindex{initialization file} 
@@ -169,23 +152,5 @@ tests do not succeed please review the installation instructions.
       @file{.emacs} file is put). You may need to set the environment
       variable @tt{HOME} to the path of this directory for the Ciao
       toplevel shell to be able to locate this file on startup.
-
-@section{An introduction to the Ciao emacs environment (Unix)}
-
-@comment{--------------}
-@include{EmacsUse.lpdoc}
-@comment{--------------}
-
-@section{Keeping up to date (Unix)}
-
-You may want to read @ref{Beyond installation} for instructions on how
-to sign up on the Ciao user's mailing list, receive announcements
-regarding new versions, download new versions, report bugs, etc.
-
-@comment{
-@section{Some notes for seasoned Prolog users}
-Ciao is a little different...
-}
-
 ").
 

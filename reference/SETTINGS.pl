@@ -17,7 +17,7 @@ filepath := at_bundle(ciao_emacs, 'elisp').
 
 doc_structure := 
         ciao-[
-	  (~docstr_getstarted),
+	  'GettingStarted'-(~docstr_gettingstarted),
 	  'DevEnv'-(~docstr_devenv),
 	  'BasicLang'-(~docstr_basiclang),
 	  'AssrtLang'-(~docstr_assrtlang),
@@ -26,15 +26,18 @@ doc_structure :=
 	  'DataStructuresAlgs'-(~docstr_datastructuresalgs),
 	  'StdLibs'-(~docstr_stdlibs),
 	  'ExtraLibs'-(~docstr_extralibs),
-	  'Interfaces'-(~docstr_interfaces),
- 	  'Appendices'-(~docstr_appendices)
+	  'Interfaces'-(~docstr_interfaces)
         ].
 
 % ---------------------------------------------------------------------------
 
-docstr_getstarted :=
-	['GetStartUnix',
-	 'GetStartWin32'].
+docstr_gettingstarted :=
+	['Install',
+	 'InstallWin32bin',
+	 'CommandLineUse',
+	 'EmacsUse'
+%	 'BeyondInstall' % TODO: move to website
+	 ].
 
 % ---------------------------------------------------------------------------
 
@@ -376,13 +379,6 @@ docstr_datastructuresalgs :=
 %   'loops'
 %   'parse_spec'
 %   'prompt'
-
-% ---------------------------------------------------------------------------
-
-docstr_appendices :=
-	['Install',
-	 'InstallWin32bin',
-	 'BeyondInstall'].
 
 % ---------------------------------------------------------------------------
 

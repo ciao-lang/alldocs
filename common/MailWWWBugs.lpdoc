@@ -2,9 +2,9 @@
 
 We recommend that you join the @cindex{mailing list}
 @cindex{ciao-users} Ciao @index{users mailing list}
-(@tt{ciao-users@@clip.dia.fi.upm.es}), in order to receive information
+(@tt{ciao-users@@cliplab.org}), in order to receive information
 on new versions and solutions to problems.  Simply send a message to
-@email{ciao-users-request@@clip.dia.fi.upm.es}, containing in the body
+@email{ciao-users-request@@cliplab.org}, containing in the body
 only the word:
 
 @tt{subscribe}
@@ -35,7 +35,7 @@ of the different components, which can be dowloaded from:
 
 If you still have problems after downloading the latest version and
 reading the installation instructions you can send a message to
-@email{ciao-bug@@clip.dia.fi.upm.es}. Please be as informative as
+@email{ciao-bug@@cliplab.org}. Please be as informative as
 possible in your messages, so that we can reproduce the bug.
 
 @begin{itemize}

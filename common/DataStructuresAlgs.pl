@@ -2,7 +2,7 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART IX - Data structures and algorithms").
+:- doc(title,"PART VI - Data structures and algorithms").
 
 :- doc(author,"The Ciao Development Team").
 

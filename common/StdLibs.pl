@@ -2,7 +2,7 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART IV - Standard libraries").
+:- doc(title,"PART VII - Standard libraries").
 
 :- doc(author, "The Ciao Development Team").
 

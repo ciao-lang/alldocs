@@ -6,7 +6,7 @@ filepath := ~ciaofilepath_common.
 
 output_name := 'ciao_devel'.
 
-doc_structure := [
+doc_structure :=
     'CiaoDevel'-[
         'ReportingBugs',
 	'CodingStyle',
@@ -18,8 +18,7 @@ doc_structure := [
         'CiaoBiblio'
 	%
 	% TODO: Other (low-level) docs: INDEV/internals-18.tex, PortingNewPlatforms
-    ]
-].
+    ].
 
 %doc_mainopts := no_patches.
 doc_mainopts := _ :- fail. % Allow patches in main changelog (those are the release notes)

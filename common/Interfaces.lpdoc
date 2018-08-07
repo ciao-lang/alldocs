@@ -1,9 +1,0 @@
-This part documents foreign interfaces (or @concept{language
-bindings}) to several languages and systems that are typically
-available in a default Ciao installation (e.g., C language, emacs,
-etc.).
-
-Other interfaces (like @concept{Java interface}, @concept{SQL-like
-database interface}, @concept{Tcl/tk interface}, etc.) are distributed
-separately.
-

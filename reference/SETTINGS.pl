@@ -25,8 +25,7 @@ doc_structure :=
 	  'CompatProlog'-(~docstr_compatprolog),
 	  'DataStructuresAlgs'-(~docstr_datastructuresalgs),
 	  'StdLibs'-(~docstr_stdlibs),
-	  'ExtraLibs'-(~docstr_extralibs),
-	  'Interfaces'-(~docstr_interfaces)
+	  'ExtraLibs'-(~docstr_extralibs)
         ].
 
 % ---------------------------------------------------------------------------
@@ -327,13 +326,6 @@ docstr_extendlang :=
 	   'foreign_interface/build_foreign_interface'
          ]
          ].
-
-% ---------------------------------------------------------------------------
-
-docstr_interfaces :=
-	[%
-	 'davinci/davinci'
-	 ].
 
 % ---------------------------------------------------------------------------
 

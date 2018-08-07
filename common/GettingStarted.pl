@@ -9,7 +9,7 @@
 :- doc(module,"
 
 This part guides you through some very basic first steps with Ciao on
-Unix-style systems (e.g., Linux, macOS, etc.) and Windows system.
+Unix-style systems (e.g., Linux, macOS, etc.) and Windows systems.
 
 We begin with the installation instructions in @ref{Installing Ciao
 from the source distribution} (or @ref{Installing Ciao from a Win32
@@ -24,7 +24,7 @@ not succeed please review the installation instructions.
 
 We continue with a description of the basics of @ref{Using Ciao from
 the command line} (a normal command shell such as @tt{sh/bash},
-@tt{csh/tcsh}, etc; or a Windows command shell). We strongly recommend
+@tt{csh/tcsh}, etc.; or a Windows command shell). We strongly recommend
 reading also @ref{An introduction to the Ciao emacs environment} for
 the basics on using Ciao under @apl{emacs}, which is a much simpler
 and much more powerful way of developing Ciao programs, and has the

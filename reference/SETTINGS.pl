@@ -332,9 +332,8 @@ docstr_extendlang :=
 
 docstr_interfaces :=
 	[%
-	 'davinci/davinci',
-	 %
-	 'linda'].
+	 'davinci/davinci'
+	 ].
 
 % ---------------------------------------------------------------------------
 

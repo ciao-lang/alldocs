@@ -4,7 +4,7 @@
 
 output_name := 'ciao'.
 
-filepath := at_bundle(core, 'doc/common'). % CiaoDesc, InstallCiao, InstallCiaoWin32, InstallTestUnix, InstallTestWin32bin, UserSetup, EmacsDownload, EmacsTesting
+filepath := at_bundle(core, 'doc/common').
 filepath := at_bundle(core, 'shell').
 filepath := at_bundle(core, 'ciaoc').
 filepath := at_bundle(core, 'engine').
@@ -125,6 +125,7 @@ docstr_stdlibs :=
 	 % Read/write terms
 	 'tokenize',
 	 'read',
+	 'read_from_string',
 	 'write',
 	 'operators',
 	 'format',
@@ -132,12 +133,16 @@ docstr_stdlibs :=
 	 'streams_utils',
 	 % Message printing
 	 'io_aux', % engine
-	 %
-	 'system',
-	 %
+	 % Runtime system (the engine)
 	 'prolog_flags', % engine
 	 'system_info', % engine
-	 'prolog_sys'].
+	 'prolog_sys',
+	 % OS
+	 'system',
+	 'pathnames',
+	 'process/process'-['process/process_channel']
+	 %
+	 ].
 
 %    'classic_doc'
 
@@ -168,14 +173,10 @@ docstr_extralibs :=
 	 'port_reify',
 	 'io_port_reify',
 	 %
-	 'read_from_string',
-	 %
 	 'ctrlcclean',
 	 'errhandle',
 	 %
 	 'fastrw',
-	 %
-	 'pathnames',
 	 %
 	 'counters',
 	 %
@@ -232,7 +233,6 @@ docstr_extralibs :=
          ],
 	 %
 	 'system_extra',
-	 'process/process'-['process/process_channel'],
 	 %
 	 'source_tree/source_tree',
 	 %
@@ -250,7 +250,11 @@ docstr_extralibs :=
 	 %
 	 'menu/menu_doc'-[
 	   'menu/menu_generator'
-         ]
+         ],
+	 %
+	 'opendoc',
+	 %
+	 'emacs/emacs'
 	 ].
 
 % ---------------------------------------------------------------------------
@@ -271,11 +275,6 @@ docstr_extendlang :=
 	 'mutables',
 	 %
 	 'odd', % setarg/3, undo/1 % TODO: rename pred
-	 % Attributed variables (used by other extensions)
-	 'attr/attr_doc' - [
-           'attr/attr_rt',
-           'attributes' % engine
-         ],
 	 % Control and evaluation strategy
 	 'indexer/indexer_doc',
 	 'block/block_doc',
@@ -299,7 +298,6 @@ docstr_extendlang :=
            'actmod/actmod_process',
            'actmod/actmod_rt'
          ],
-	 % 'agent/agent_doc', (Deprecated)
 	 %
 	 'bf/bf_doc',
 	 'id/id_doc',
@@ -316,24 +314,25 @@ docstr_extendlang :=
          ],
 	 'factsdb/factsdb_doc'-[
 	   'factsdb/factsdb_rt'
+         ],
+	 % Attributed variables (used by other extensions)
+	 'attr/attr_doc' - [
+           'attr/attr_rt',
+           'attributes' % engine
+         ],
+	 % Foreign interface to C
+	 'foreign_interface/foreign_interface_doc'-[
+	   'foreign_interface/foreign_interface_properties',
+	   'foreign_compilation',
+	   'foreign_interface/build_foreign_interface'
          ]
          ].
 
 % ---------------------------------------------------------------------------
 
-% TODO: menu is not an interface! (this is for interfaces to other languages)
 docstr_interfaces :=
-	['foreign_interface/foreign_interface_doc'-[
-	   'foreign_interface/foreign_interface_properties',
-	   'foreign_compilation',
-	   'foreign_interface/build_foreign_interface'
-         ],
-	 %
+	[%
 	 'davinci/davinci',
-	 %
-	 'opendoc',
-	 %
-	 'emacs/emacs',
 	 %
 	 'linda'].
 

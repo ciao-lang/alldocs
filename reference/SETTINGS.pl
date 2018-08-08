@@ -208,8 +208,6 @@ docstr_extralibs :=
 	  'tracing/traces'-[
             'byrdbox/byrd'
           ],
-	  % Debugging packages
-	  'expansion_tools',
 	  %
 	  'concurrency/concurrency',
 	  'conc_aggregates',

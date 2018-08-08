@@ -31,6 +31,9 @@ and much more powerful way of developing Ciao programs, and has the
 advantage of offering an almost identical environment under Unix and
 Windows.
 
+For any problem during the installation or use of Ciao, please refer
+to @ref{Troubleshooting} @cindex{troubleshooting} for common issues
+and reporting bugs.
 ").
 
 % @comment{You may want to read @ref{Beyond installation} for instructions on how

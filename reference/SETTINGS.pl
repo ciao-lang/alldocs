@@ -35,8 +35,8 @@ docstr_gettingstarted :=
           'Install',
 	  'InstallWin32bin',
 	  'CommandLineUse',
-	  'EmacsUse'
-%	  'BeyondInstall' % TODO: move to website
+	  'EmacsUse',
+	  'Troubleshooting'
 	].
 
 % ---------------------------------------------------------------------------

@@ -25,7 +25,8 @@ offers a number of tools such as the Ciao standalone compiler
 helps the task of developing programs with support for editing,
 debugging, version/change tracking, etc.), numerous libraries, a
 powerful program preprocessor (@tt{ciaopp}
-@cite{effofai-toplas,ciaopp-manual,ciaopp-iclp99-tut}, which supports
+@cite{effofai-toplas,prog-glob-an,ciaopp-iclp99-tut,ciaopp-manual,ciaopp-sas03-journal-scp},
+which supports
 static debugging and optimization from program analysis via source to
 source program transformation), and an automatic documentation
 generator (@tt{lpdoc}) @cite{lpdoc-reference,lpdoc-cl2000}.  A number
@@ -48,7 +49,8 @@ compilation @cite{ciaoc-ws}, and modular global program analysis,
 debugging and optimization @cite{ciao-modules-analspec-ws}, based on a
 rich assertion language [see PART III - Assertions and
 auto-documentation] for declaring (optional) program properties
-(including types and modes), which can be checked either statically or
+(including types, modes, determinacy, etc.),
+ which can be checked either statically or
 dynamically.  The program analysis, static debugging and optimization
 tasks related to these assertions are performed by the @apl{ciaopp}
 preprocessor, as mentioned above. These assertions (together with

@@ -372,11 +372,13 @@ docstr_datastructuresalgs :=
 % ---------------------------------------------------------------------------
 
 % TODO: other libraries that are distributed but not ready:
+
 %   'metatypes'
 %   'meta_props'
 %   'loops'
 %   'parse_spec'
 %   'prompt'
+%   'cmdline'
 
 % ---------------------------------------------------------------------------
 

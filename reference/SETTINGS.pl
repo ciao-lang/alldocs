@@ -80,6 +80,8 @@ docstr_basiclang :=
 	  'term_compare', % engine
 	  'atomic_basic', % engine
 	  'arithmetic', % engine
+	  % (Aggregates)
+	  'aggregates',
 	  % (Dynamic database)
 	  'data_facts', % engine
 	  'dynamic', % (OPTIONAL)
@@ -98,7 +100,7 @@ docstr_basiclang :=
 
 docstr_compatprolog :=
 	'CompatProlog'-[
-	  'default_predicates', % Moved from standard libraries
+	  'default_predicates', % Moved from standard libraries % TODO: merge with classic_doc
           'iso_doc',
 	  'iso_char',
 	  'iso_misc',
@@ -116,19 +118,10 @@ docstr_compatprolog :=
 % (Standard library)
 docstr_stdlibs :=
 	'StdLibs'-[
-	  % 'default_predicates', -> moved to compatibility
-	  %
-	  'between',
-	  %
-	  'aggregates',
-	  %
-	  'libpaths',
-	  %
-	  'assertions/assrt_lib',
-	  'compiler/compiler', % TODO: for dynamic compilation and code loading
 	  % Streams and I/O
 	  'streams_basic', % engine
 	  'io_basic', % engine
+	  'streams_utils',
 	  % Read/write terms
 	  'tokenize',
 	  'read',
@@ -136,21 +129,21 @@ docstr_stdlibs :=
 	  'write',
 	  'operators',
 	  'format',
-	  % Some useful I/O predicates
-	  'streams_utils',
 	  % Message printing
 	  'io_aux', % engine
 	  % Runtime system (the engine)
 	  'prolog_flags', % engine
 	  'system_info', % engine
 	  'prolog_sys',
+	  % Compiler
+	  'assertions/assrt_lib',
+	  'compiler/compiler', % TODO: for dynamic compilation and code loading
+	  'libpaths',
 	  % OS
 	  'system',
 	  'pathnames',
 	  'process/process'-['process/process_channel']
 	 ].
-
-%    'classic_doc'
 
 % ---------------------------------------------------------------------------
 
@@ -172,80 +165,72 @@ docstr_assrtlang :=
 
 docstr_extralibs :=
 	'ExtraLibs'-[
-	  'getopts',
-	  'messages',
-	  %
+	  % Additional for I/O
 	  'streams',
 	  'io_alias_redirection',
-	  %
+	  % Additional for control
 	  'port_reify',
 	  'io_port_reify',
 	  %
 	  'ctrlcclean',
 	  'errhandle',
-	  %
-	  'fastrw',
-	  %
-	  'counters',
-	  %
-	  'file_locks/file_locks',
-	  %
+	  % Additional for data structures
 	  'terms',
 	  'terms_check',
 	  'terms_vars',
 	  'cyclic_terms',
 	  %
+	  'fastrw', % (fast serialization)
+	  %
 	  'modblobs/modblobs',
 	  %
 	  'formulae',
+	  % 
+	  'counters', % (here?)
+	  %
+	  'between',
 	  % Pretty-printers
 	  'pretty_print',
 	  'assertions/assrt_write',
-	  %
 	  'syntax_highlight/syntax_highlight',
-	  %
+	  % Additional for source
+	  'source_tree/source_tree',
+	  'version_strings',
 	  'librowser/librowser',
 	  % Debugging
 	  'tracing/traces'-[
             'byrdbox/byrd'
           ],
-	  %
+	  % Concurrency
 	  'concurrency/concurrency',
 	  'conc_aggregates',
-	  %
+	  % Random
 	  'random/random',
-	  %
 	  'random_aggregates',
-	  %
+	  % Networking
 	  'sockets/sockets',
 	  'sockets/sockets_io',
           %
 	  ~docstr_http,
 	  %
 	  ~docstr_pillow,
-	  %
-	  'system_extra',
-	  %
-	  'source_tree/source_tree',
-	  %
-	  'archive_files',
-	  %
-	  'version_strings',
-	  %
+	  % Text templates and matching
 	  'glob',
 	  'regexp/regexp_doc'-['regexp/regexp_code'],
 	  'text_template',
-	  %
-	  'parse_shell_args',
-	  %
-	  'symfnames/symfnames',
-	  %
+	  % Messages and user interaction
+	  'messages',
 	  'menu/menu_doc'-[
 	    'menu/menu_generator'
           ],
-	  %
+	  % Miscellaneous OS and tools
+	  'getopts',
+	  'system_extra',
+	  'parse_shell_args',
+	  'archive_files',
+	  'file_locks/file_locks',
+	  'symfnames/symfnames',
 	  'opendoc',
-	  %
 	  'emacs/emacs'
 	].
 

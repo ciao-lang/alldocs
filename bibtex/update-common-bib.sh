@@ -25,7 +25,7 @@ EOF
     exit 1
 fi
 
-bib_origin_path="../../../../bibtex"
+bib_origin_path="../../../../../bibtex"
 bib_origin="svn+ssh://cliplab.org/home/clip/SvnReps/bibtex"
 
 check_bib_origin() {

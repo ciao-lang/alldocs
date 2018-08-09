@@ -26,7 +26,7 @@ default in the modules that load it.
 
 The intention of the Ciao developers is to progressively complete the
 compliance of Ciao with the published parts of the ISO standard as
-well as with other reasonable extensions of the standard may be
+well as with other reasonable extensions of the standard that may be
 published in the future.  However, since one of the design objectives
 of Ciao is to address some shortcomings of previous implementations of
 Prolog and logic programming in general, we also hope that some of the

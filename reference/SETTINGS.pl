@@ -197,10 +197,6 @@ docstr_extralibs :=
 	  'source_tree/source_tree',
 	  'version_strings',
 	  'librowser/librowser',
-	  % Debugging
-	  'tracing/traces'-[
-            'byrdbox/byrd'
-          ],
 	  % Concurrency
 	  'concurrency/concurrency',
 	  'conc_aggregates',

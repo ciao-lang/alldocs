@@ -5,7 +5,7 @@
 # A script to maintain a common.bib reading all *.aux files generated in
 # this workspace (../../../build/doc/*.cachedoc/*.aux).
 #
-# This scripts adds new entries from the origin .bib files (which are not
+# This script adds new entries from the origin .bib files (which are not
 # necessarily distributed)
 #
 

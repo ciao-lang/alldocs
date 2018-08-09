@@ -98,6 +98,7 @@ docstr_basiclang :=
 
 docstr_compatprolog :=
 	'CompatProlog'-[
+	  'default_predicates', % Moved from standard libraries
           'iso_doc',
 	  'iso_char',
 	  'iso_misc',
@@ -115,7 +116,7 @@ docstr_compatprolog :=
 % (Standard library)
 docstr_stdlibs :=
 	'StdLibs'-[
-	  'default_predicates',
+	  % 'default_predicates', -> moved to compatibility
 	  %
 	  'between',
 	  %

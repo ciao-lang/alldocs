@@ -16,11 +16,13 @@ point. Using these features, the Ciao distribution includes libraries
 which significantly extend the language both syntactically and
 semantically.
 
-In order to aid programmers who wish to write standard compliant
+In order to aid programmers who wish to write standard-compliant
 programs, library predicates that correspond to those in the
 ISO-Prolog standard are marked specially in the manuals, and
 differences between the Ciao and the prescribed ISO-Prolog behaviours,
-if any, are commented appropriately.
+if any, are commented appropriately. There is also an @ref{ISO-Prolog
+package} which makes the standard ISO-Prolog predicates available by
+default in the modules that load it.
 
 The intention of the Ciao developers is to progressively complete the
 compliance of Ciao with the published parts of the ISO standard as

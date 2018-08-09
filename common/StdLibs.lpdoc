@@ -1,12 +1,17 @@
 This part documents the @concept{standard Ciao library}.  The
 predicates in this library are part of the core Ciao system. In
-addition to Ciao-specific extensions, this library offers a large
-subset of the predicates in the @concept{ISO Prolog standard} and
-classical Prolog systems.
+particular, this library includes a large subset of the @concept{ISO
+Prolog standard} predicates and also of the additional predicates
+normally provided by most classical Prolog systems, in addition to 
+Ciao-specific extensions.
 
-Note that in Ciao, in order to be used in a given program file, these
-modules have to be loaded explicitly (except if specified otherwise in
-their @em{usage} section) (see @ref{The module system}).
+In general, these modules and predicates have to be imported
+explicitly as indicated in the corresponding @em{usage} section.
+However, if a @decl{module/2} declaration is used (or in user files
+without a starting @decl{use_package/1} declaration) many of them are
+loaded by default. See @ref{Classic Prolog} and @ref{The module
+system} for more details.
+
 
 @comment{One advantage is that this allows building @concept{fully static
 executables} (e.g., for standalone applications) of minimal size by

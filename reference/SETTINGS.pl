@@ -119,7 +119,7 @@ docstr_compatprolog :=
 docstr_stdlibs :=
 	'StdLibs'-[
 	  % Streams and I/O
-	  'streams_basic', % engine
+	  'stream_basic', % engine
 	  'io_basic', % engine
 	  'streams_utils',
 	  % Read/write terms

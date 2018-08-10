@@ -121,7 +121,7 @@ docstr_stdlibs :=
 	  % Streams and I/O
 	  'stream_basic', % engine
 	  'io_basic', % engine
-	  'streams_utils',
+	  'stream_utils',
 	  % Read/write terms
 	  'tokenize',
 	  'read',

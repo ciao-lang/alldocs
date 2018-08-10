@@ -24,6 +24,15 @@
   `<bundle>/bugs/Fixed`. Place at `<bundle>/bugs/Unclassified`
   potential bugs whose status may be unknown.
 
+- Make sure that you do proper usage of clause indexing (in Ciao it is done on
+  the first argument of predicates) and cuts (`!/0`), for the expected
+  instantiation modes for each predicate. Doing unnecessary backtracking and
+  leaving choice points can introduce nasty performance bugs that are hard to
+  debug.
+
+- Understand algorithmic cost of operations (assert/consult is typically linear
+  in the size of terms, var-nonvar unification is typically constant time, etc.)
+
 # Coding style for C Code
 
 - In general, avoid `inline` functions (see [Linux Kernel Coding

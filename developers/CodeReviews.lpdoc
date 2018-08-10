@@ -257,3 +257,16 @@ interface:
 - '`arc diff --plan-changes`': Updated the current Diff but does not request a
   review from its reviewers, useful for incomplete temporal saves (e.g., daily
   saves).
+
+
+Also, `arc` understands some keywords in commit messages (see
+[this web page](https://secure.phabricator.com/T5132) for details):
+
+- attach a revision or a commit to a task with `Ref T42` in the summary/commit
+   message;
+
+- close a task when pushing a commit with `Fixes T42` in the summary/commit
+  message;
+
+These commands also work for regular commits (e.g., pushed via `git push`,
+not only during `arc land`).

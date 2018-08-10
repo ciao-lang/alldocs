@@ -4,17 +4,16 @@ subsume @index{ISO-Prolog} (International Standard ISO/IEC 13211-1,
 PROLOG: Part 1--General Core @cite{iso-prolog}), while at the same
 time extending it in many important ways. The intention is to ensure
 that all ISO-compliant Prolog programs run correctly under Ciao. At
-the same time, the Ciao module system (see [PART II - The Ciao basic
-language (engine)] and @cite{ciao-modules-cl2000} for a discussion of
-the motivations behind the design) allows selectively avoiding the
-loading of most ISO-builtins (and changing some other ISO
-characteristics) when not needed, so that it is possible to work with
-purer subsets of Prolog and also to build small executables.  Also,
-this module system makes it possible to develop extensions using these
-purer subsets (or even the full ISO-standard) as a starting
-point. Using these features, the Ciao distribution includes libraries
-which significantly extend the language both syntactically and
-semantically.
+the same time, the Ciao module system (see @ref{PART II - The Ciao
+basic language} and @cite{ciao-modules-cl2000} for a discussion of the
+motivations behind the design) allows selectively avoiding the loading
+of most ISO-builtins (and changing some other ISO characteristics)
+when not needed, so that it is possible to work with purer subsets of
+Prolog and also to build small executables.  Also, this module system
+makes it possible to develop extensions using these purer subsets (or
+even the full ISO-standard) as a starting point. Using these features,
+the Ciao distribution includes libraries which significantly extend
+the language both syntactically and semantically.
 
 In order to aid programmers who wish to write standard-compliant
 programs, library predicates that correspond to those in the

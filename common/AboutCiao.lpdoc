@@ -35,41 +35,43 @@ of execution visualization tools
 also available.
 
 This manual documents the first four of the tools mentioned above [see
-PART I - The program development environment], and the Ciao 
+@ref{PART I - The program development environment}], and the Ciao 
 language and libraries. The @tt{ciaopp} and @tt{lpdoc} tools are
 documented in separate manuals.
 
-The Ciao language [see PART II - The Ciao basic language] has been
-designed from the ground up to be small, but to also allow extensions
-and restrictions in a modular way. This allows modular program
-development with clear program semantics, as well as automatic program
-manipulation and optimization. Ciao includes a robust module system
-@cite{ciao-modules-cl2000}, module-based automatic incremental
+The Ciao language [see @ref{PART II - The Ciao basic language}] has
+been designed from the ground up to be small, but to also allow
+extensions and restrictions in a modular way. This allows modular
+program development with clear program semantics, as well as automatic
+program manipulation and optimization. Ciao includes a robust module
+system @cite{ciao-modules-cl2000}, module-based automatic incremental
 compilation @cite{ciaoc-ws}, and modular global program analysis,
 debugging and optimization @cite{ciao-modules-analspec-ws}, based on a
-rich assertion language [see PART III - Assertions and
-auto-documentation] for declaring (optional) program properties
-(including types, modes, determinacy, etc.),
- which can be checked either statically or
-dynamically.  The program analysis, static debugging and optimization
-tasks related to these assertions are performed by the @apl{ciaopp}
-preprocessor, as mentioned above. These assertions (together with
-special comment-style declarations) are also the ones used by the
-@apl{lpdoc} autodocumenter to generate documentation for programs (the
-comment-style declarations are documented in the @tt{lpdoc} manual).
+rich assertion language [see @ref{PART III - Assertions and
+auto-documentation}] for declaring (optional) program properties
+(including types, modes, determinacy, etc.), which can be checked
+either statically or dynamically.  The program analysis, static
+debugging and optimization tasks related to these assertions are
+performed by the @apl{ciaopp} preprocessor, as mentioned above. These
+assertions (together with special comment-style declarations) are also
+the ones used by the @apl{lpdoc} autodocumenter to generate
+documentation for programs (the comment-style declarations are
+documented in the @tt{lpdoc} manual).
 
 Moreover, the modular design allows powerful extensions such as
 constraint logic programming, multi-paradigm features (higher-order,
 functional notation, etc.), alternative search and evaluation
 strategies, concurrency (threads), distributed and parallel execution,
 foreign language interfaces, restrictions such as working with pure
-horn clauses [see PART IV - Ciao extensions], as well as supporting
-standard ISO-Prolog [see PART V - Compatibility].
+horn clauses [see @ref{PART IV - Ciao extensions}], as well as
+supporting standard ISO-Prolog [see @ref{PART V - Compatibility}].
 
 Ciao includes a collection of standard and additional libraries and
-utilities see [see PARTs VI-VIII]. Apart from these, many other tools
-and libraries, such as @concept{language bindings}) to several
-languages and systems are distributed as separate @concept{bundle}s.
+utilities see [see @ref{PART VI - Data structures and algorithms},
+@ref{PART VII - Standard libraries}, and @ref{PART VIII - Additional
+libraries}]. Apart from these, many other tools and libraries, such as
+@concept{language bindings}) to several languages and systems are
+distributed as separate @concept{bundle}s.
 
 @comment{Other interfaces (like @concept{Java interface},
 @concept{SQL-like database interface}, @concept{Tcl/tk interface},

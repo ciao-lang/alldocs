@@ -17,7 +17,7 @@ BUNDLENAME/bugs/
 └── Unclassified
 ```
 
-For example, the `bugs` directory of the `core` bundle look like:
+For example, the `bugs` directory of the `core` bundle looks like:
 
 ```
 CIAOROOT/core/bugs/
@@ -28,7 +28,7 @@ CIAOROOT/core/bugs/
 └── Unclassified
 ```
 
-For internal development bugs may also be filed at our Phabricator site (as
+For internal development, bugs may also be filed at our Phabricator site (as
 tasks). Bugs may also be filed as github issues, although we recommend
 the other channels mentioned above.
 

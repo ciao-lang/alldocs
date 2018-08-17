@@ -1,28 +1,31 @@
-This page describes the Ciao code review workflow using Phabricator
-and Arcanist.
+This page describes the Ciao code review workflow using __Phabricator__
+and __Arcanist__.
 
 # How to Submit Code for Review
 
 ## Step 1: Prepare your working directory
 
-By default Arcanist assumes _One Idea, One Commit_ approach for each
-task. On practice it means that your working directory should not
+By default Arcanist assumes the _One Idea, One Commit_ approach for each
+task. In practice this means that your working directory should not
 contain any local changes with respect to the `HEAD` commit when you
 start working on a new task. Should you have any changes you would like
-to keep, use '`git stash`'.
-
-To begin, prepare your working directory (assuming, your default
-branch is '`master`'):
+to keep, use '`git stash:`'
 
 ```sh
 [git stash] # optional step, only if you have changes to tracked files
 git checkout master
 git pull origin master
-arc branch T42 # alternatively: arc feature T42
 ```
 
 ## Step 2: Create a local branch you will be working on
 
+To begin, prepare your working directory by creating a branch with the
+name of the task that you will be working on. Assuming that your
+default branch is '`master`' and the task is T42, do:
+
+```sh
+arc branch T42 # alternatively: arc feature T42
+```
 The '`arc branch`' command creates a local git task branch and switches
 to it. You should name your task branch the same as the Task you are working
 on. If you do so, Arcanist will automatically link your Diff and the
@@ -33,7 +36,7 @@ Task together.
 the task branches are set up to track the local branch
 you are currently working on. If you accidentally create a task branch
 from a wrong local branch, simply delete the task branch with
-'`git branch -d ...`', checkout the correct local branch and repeat the
+'`git branch -d ...`', check out the correct local branch and repeat the
 '`arc branch`' command. It also seems to be possible in some cases to
 [change the local branch manually](https://stackoverflow.com/q/23920380)
 or
@@ -106,7 +109,7 @@ To close such revision it is enough to execute the '`arc amend`' (or
 '`arc close-revision`') and '`git push`' commands.
 
 
-## Step 4*: Respond to Reviews or Update a Revision
+## Step 4: Respond to Reviews or Update a Revision
 
 If a reviewer requests changes to the revision and you agree with those,
 implement them and submit a new code revision. To do this you introduce

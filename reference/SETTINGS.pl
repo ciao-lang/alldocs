@@ -101,7 +101,7 @@ docstr_basiclang :=
 docstr_compatprolog :=
 	'CompatProlog'-[
 	  'classic/classic_doc',
-          'iso_doc',
+          'iso/iso_doc',
 	  'iso_char',
 	  'iso_misc',
 	  'iso_incomplete',

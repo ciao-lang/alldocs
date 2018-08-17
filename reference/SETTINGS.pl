@@ -100,7 +100,7 @@ docstr_basiclang :=
 
 docstr_compatprolog :=
 	'CompatProlog'-[
-	  'default_predicates', % Moved from standard libraries % TODO: merge with classic_doc
+	  'classic/classic_doc',
           'iso_doc',
 	  'iso_char',
 	  'iso_misc',

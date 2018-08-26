@@ -129,6 +129,7 @@ docstr_stdlibs :=
 	  'write',
 	  'operators',
 	  'format',
+	  'terms_io',
 	  % Message printing
 	  'io_aux', % engine
 	  % Runtime system (the engine)

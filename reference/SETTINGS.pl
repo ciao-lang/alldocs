@@ -167,7 +167,7 @@ docstr_assrtlang :=
 docstr_extralibs :=
 	'ExtraLibs'-[
 	  % Additional for I/O
-	  'streams',
+	  %'streams', % TODO: recover reexporting io_basic+stream_basic?
 	  'io_alias_redirection',
 	  % Additional for control
 	  'port_reify',

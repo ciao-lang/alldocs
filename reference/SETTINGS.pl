@@ -130,12 +130,12 @@ docstr_stdlibs :=
 	  'operators',
 	  'format',
 	  'terms_io',
-	  % Message printing
-	  'io_aux', % engine
+	  % Message printing (internal)
+	  'messages_basic',
 	  % Runtime system (the engine)
 	  'prolog_flags', % engine
-	  'system_info', % engine
 	  'prolog_sys',
+	  'system_info', % engine
 	  % Compiler
 	  'assertions/assrt_lib',
 	  'compiler/compiler', % TODO: for dynamic compilation and code loading

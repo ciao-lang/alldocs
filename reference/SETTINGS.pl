@@ -74,7 +74,6 @@ docstr_basiclang :=
 	  % (Predicates and terms)
 	  'basiccontrol', % engine
 	  'exceptions', % engine
-	  'basic_props', % engine
 	  'term_typing', % engine
 	  'term_basic', % engine
 	  'term_compare', % engine
@@ -154,6 +153,7 @@ docstr_assrtlang :=
 	    'assertions/assertions_props'
           ],
 	  'regtypes/regtypes_doc',
+	  'basic_props', % engine
 	  'assertions/native_props',
 	  %
 	  'isomodes/isomodes_doc',

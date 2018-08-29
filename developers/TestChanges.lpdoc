@@ -71,10 +71,12 @@ bundles for several platforms with the command
 
  - `tbz`: Creates the `tar` packages in `bzip2` compressed format.
 
+@begin{note}
 @bf{Note:} distribution generation may ignore some files under the
 source tree based on some marks (`NOCOMPILE`, `NODISTRIBUTE`,
 `NOINSTALL`, etc.). See a more complete description of at
 \lib{library(source_tree)}.
+@end{note}
 
 ## Testing a distribution
 

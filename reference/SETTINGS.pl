@@ -131,9 +131,8 @@ docstr_stdlibs :=
 	  'terms_io',
 	  % Message printing (internal)
 	  'messages_basic',
-	  % Runtime system (the engine)
-	  'prolog_flags', % engine
-	  'prolog_sys',
+	  % Runtime system control and info
+	  'runtime_control', % engine
 	  'system_info', % engine
 	  % Compiler
 	  'assertions/assrt_lib',

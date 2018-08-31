@@ -83,7 +83,9 @@ docstr_basiclang :=
 	  'aggregates',
 	  % (Dynamic database)
 	  'data_facts', % engine
-	  'dynamic', % (OPTIONAL)
+	  'dynamic/dynamic_doc'-[ % (OPTIONAL)
+	    'dynamic/dynamic_rt'
+ 	  ],
 	  'dynamic_clauses/dynamic_clauses_doc'-[ % (OPTIONAL)
 	    'dynamic_clauses/dynamic_clauses_rt'
  	  ]

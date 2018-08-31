@@ -78,24 +78,123 @@ docstr_basiclang :=
 	  'term_basic', % engine
 	  'term_compare', % engine
 	  'atomic_basic', % engine
-	  'arithmetic', % engine
-	  % (Aggregates)
-	  'aggregates',
-	  % (Dynamic database)
-	  'data_facts', % engine
-	  'dynamic/dynamic_doc'-[ % (OPTIONAL)
-	    'dynamic/dynamic_rt'
- 	  ],
-	  'dynamic_clauses/dynamic_clauses_doc'-[ % (OPTIONAL)
-	    'dynamic_clauses/dynamic_clauses_rt'
- 	  ]
+	  'arithmetic' % engine
         ].
 
-% Should not be used, so we do not document them
-% 	'internals'
+% Note: 'mexpand' could be documented to describe module expansion
+% rules, etc.
 
-% Other
-% 	'mexpand'
+% ---------------------------------------------------------------------------
+
+docstr_assrtlang :=
+	'AssrtLang'-[
+          'assertions/assertions_doc'-[
+	    'assertions/assertions_props'
+          ],
+	  'regtypes/regtypes_doc',
+	  'basic_props', % engine
+	  'assertions/native_props',
+	  %
+	  'isomodes/isomodes_doc',
+	  'basicmodes/basicmodes_doc',
+	  %
+	  'doccomments/doccomments_doc'
+	].
+	 
+% ---------------------------------------------------------------------------
+
+docstr_extendlang :=
+	'ExtendLang'-[
+          % "Pure"
+          'pure/pure_doc',
+	  % Higher order and interfaces
+	  'hiord_rt', % (engine)
+	  'traits/traits_doc',
+	  % Records and functional notation
+	  'argnames/argnames_doc',
+	  'fsyntax/fsyntax_doc',
+	  % DCGs % TODO: add implicits/fluids
+	  'dcg/dcg_doc'-['dcg/dcg_phrase_doc'],
+	  % Mutables and implicits (globals)
+	  'global_vars',
+	  'mutables',
+	  % Control and evaluation strategy
+	  'indexer/indexer_doc',
+	  'block/block_doc',
+	  'freeze/freeze',
+	  'when/when',
+	  'andorra/andorra_doc',
+	  'det_hook/det_hook_doc'-[
+	    'det_hook/det_hook_rt'
+          ],
+	  'lazy/lazy_doc'-[
+	    'lazy/lazy_lib'
+          ],
+	  'bf/bf_doc',
+	  'id/id_doc',
+	  % Other
+	  'odd', % setarg/3, undo/1 % TODO: they should not be in the same module
+	  % Aggregates
+	  'aggregates',
+	  % Dynamic database
+	  'datafacts/datafacts_doc'-[
+%	    'datafacts/datafacts_rt'
+	    'data_facts' % (engine)
+ 	  ],
+	  'dynamic/dynamic_doc'-[
+	    'dynamic/dynamic_rt'
+ 	  ],
+	  'dynamic_clauses/dynamic_clauses_doc'-[
+	    'dynamic_clauses/dynamic_clauses_rt'
+ 	  ],
+          % Persistence
+	  'persdb/persdb_rt'-[
+	    'persdb/persdb_examples',
+	    'persdb/datadir'
+          ],
+	  'factsdb/factsdb_doc'-[
+	    'factsdb/factsdb_rt'
+          ],
+	  % Concurrency
+	  'concurrency/concurrency',
+	  'conc_aggregates',
+	  % Distributed
+	  ~docstr_actmod,
+	  % Constrain domains
+	  'clpq/clpq_doc',
+	  'clpr/clpr_doc',
+	  'clpfd/clpfd_doc'-[
+	    'clpfd/clpfd_rt'
+          ],
+	  % Attributed variables (used by other extensions)
+	  ~docstr_attr,
+	  % Foreign interface to C
+	  ~docstr_foreign
+        ].
+
+docstr_actmod :=
+	'actmod/actmod_doc'-[
+	  'actmod/actmod_dist'-[
+            'actmod/regp_filebased',
+            'actmod/regp_platformbased',
+            'actmod/regp_webbased'
+	  ],
+          'actmod/actmod_process',
+          'actmod/actmod_rt'
+	].
+
+docstr_attr :=
+	'attr/attr_doc'-[
+          'attr/attr_rt',
+          'attributes' % engine
+        ].
+
+docstr_foreign :=
+	'foreign_interface/foreign_interface_doc'-[
+	  'foreign_interface/foreign_interface_properties',
+	  'foreign_compilation',
+	  'foreign_interface/build_foreign_interface'
+        ].
 
 % ---------------------------------------------------------------------------
 
@@ -112,6 +211,42 @@ docstr_compatprolog :=
 	  'ttyout',
 	  'runtime_ops/runtime_ops_doc',
 	  'listing'
+        ].
+
+% ---------------------------------------------------------------------------
+
+% Theses are data structures (in the sense of [1]), implementing some ADTs [2]
+%   [1] https://xlinux.nist.gov/dads/HTML/dataStructure.html
+%   [2] https://xlinux.nist.gov/dads/HTML/abstractDataType.html
+docstr_datastructuresalgs :=
+	'DataStructuresAlgs'-[
+          % Lists and strings
+	  'lists',
+	  'hiordlib', % (hiord algorithms on lists)
+	  'sort',
+	  'llists',
+	  'idlists',
+	  'numlists',
+	  'strings',
+	  'fuzzy_search/fuzzy_search',
+	  'diff',
+	  % Maps
+	  'dict',
+	  'vndict',
+	  'arrays',
+	  'assoc',
+	  'keys', % TODO: document/merge
+	  % Graphs
+	  'graphs/graphs',
+	  'graphs/ugraphs',
+	  % 'graphs/wgraphs', % it was a verbatim copy of lgraphs using X is min(A,B) instead of min/3
+	  'graphs/lgraphs',
+	  % Queues
+	  'queues',
+	  % Sets
+	  'sets',
+	  'bitcodesets', % TODO: review
+	  'lsets' % TODO: document/merge
         ].
 
 % ---------------------------------------------------------------------------
@@ -148,23 +283,6 @@ docstr_stdlibs :=
 
 % ---------------------------------------------------------------------------
 
-docstr_assrtlang :=
-	'AssrtLang'-[
-          'assertions/assertions_doc'-[
-	    'assertions/assertions_props'
-          ],
-	  'regtypes/regtypes_doc',
-	  'basic_props', % engine
-	  'assertions/native_props',
-	  %
-	  'isomodes/isomodes_doc',
-	  'basicmodes/basicmodes_doc',
-	  %
-	  'doccomments/doccomments_doc'
-	].
-	 
-% ---------------------------------------------------------------------------
-
 docstr_extralibs :=
 	'ExtraLibs'-[
 	  % Additional for I/O
@@ -199,9 +317,6 @@ docstr_extralibs :=
 	  'source_tree/source_tree',
 	  'version_strings',
 	  'librowser/librowser',
-	  % Concurrency
-	  'concurrency/concurrency',
-	  'conc_aggregates',
 	  % Random
 	  'random/random',
 	  'random_aggregates',
@@ -250,121 +365,6 @@ docstr_pillow :=
 	  'pillow/html',
 	  'pillow/json',
 	  'pillow/color_space'
-        ].
-
-% ---------------------------------------------------------------------------
-
-docstr_extendlang :=
-	'ExtendLang'-['pure/pure_doc',
-	  % Higher order, interfaces, etc.
-	  'hiord_rt', % engine
-	  'hiordlib',
-	  'traits/traits_doc',
-	  % Records and functional notation
-	  'argnames/argnames_doc',
-	  'fsyntax/fsyntax_doc',
-	  % DCGs % TODO: add implicits/fluids
-	  'dcg/dcg_doc'-['dcg/dcg_phrase_doc'],
-	  % Mutables and implicits (globals)
-	  'global_vars',
-	  'mutables',
-	  %
-	  'odd', % setarg/3, undo/1 % TODO: rename pred
-	  % Control and evaluation strategy
-	  'indexer/indexer_doc',
-	  'block/block_doc',
-	  'freeze/freeze',
-	  'when/when',
-	  'andorra/andorra_doc',
-	  'det_hook/det_hook_doc'-[
-	    'det_hook/det_hook_rt'
-          ],
-	  'lazy/lazy_doc'-[
-	    'lazy/lazy_lib'
-          ],
-	  % TODO: undo/1 should be here
-	  % Concurrency and distributed
-	  ~docstr_actmod,
-	  %
-	  'bf/bf_doc',
-	  'id/id_doc',
-	  % Constrain domains
-	  'clpq/clpq_doc',
-	  'clpr/clpr_doc',
-	  'clpfd/clpfd_doc'-[
-	    'clpfd/clpfd_rt'
-          ],
-          % Persistence
-	  'persdb/persdb_rt'-[
-	    'persdb/persdb_examples',
-	    'persdb/datadir'
-          ],
-	  'factsdb/factsdb_doc'-[
-	    'factsdb/factsdb_rt'
-          ],
-	  % Attributed variables (used by other extensions)
-	  ~docstr_attr,
-	  % Foreign interface to C
-	  ~docstr_foreign
-        ].
-
-docstr_actmod :=
-	'actmod/actmod_doc'-[
-	  'actmod/actmod_dist'-[
-            'actmod/regp_filebased',
-            'actmod/regp_platformbased',
-            'actmod/regp_webbased'
-	  ],
-          'actmod/actmod_process',
-          'actmod/actmod_rt'
-	].
-
-docstr_attr :=
-	'attr/attr_doc'-[
-          'attr/attr_rt',
-          'attributes' % engine
-        ].
-
-docstr_foreign :=
-	'foreign_interface/foreign_interface_doc'-[
-	  'foreign_interface/foreign_interface_properties',
-	  'foreign_compilation',
-	  'foreign_interface/build_foreign_interface'
-        ].
-
-% ---------------------------------------------------------------------------
-
-% Theses are data structures (in the sense of [1]), implementing some ADTs [2]
-%   [1] https://xlinux.nist.gov/dads/HTML/dataStructure.html
-%   [2] https://xlinux.nist.gov/dads/HTML/abstractDataType.html
-docstr_datastructuresalgs :=
-	'DataStructuresAlgs'-[
-          % Lists and strings
-	  'lists',
-	  'sort',
-	  'llists',
-	  'idlists',
-	  'numlists',
-	  'strings',
-	  'fuzzy_search/fuzzy_search',
-	  'diff',
-	  % Maps
-	  'dict',
-	  'vndict',
-	  'arrays',
-	  'assoc',
-	  'keys', % TODO: document/merge
-	  % Graphs
-	  'graphs/graphs',
-	  'graphs/ugraphs',
-	  % 'graphs/wgraphs', % it was a verbatim copy of lgraphs using X is min(A,B) instead of min/3
-	  'graphs/lgraphs',
-	  % Queues
-	  'queues',
-	  % Sets
-	  'sets',
-	  'bitcodesets', % TODO: review
-	  'lsets' % TODO: document/merge
         ].
 
 % ---------------------------------------------------------------------------

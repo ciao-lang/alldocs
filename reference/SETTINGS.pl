@@ -138,8 +138,7 @@ docstr_extendlang :=
 	  'aggregates',
 	  % Dynamic database
 	  'datafacts/datafacts_doc'-[
-%	    'datafacts/datafacts_rt'
-	    'data_facts' % (engine)
+	    'datafacts/datafacts_rt'
  	  ],
 	  'dynamic/dynamic_doc'-[
 	    'dynamic/dynamic_rt'

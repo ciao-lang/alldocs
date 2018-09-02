@@ -10,9 +10,9 @@ depends([
   % ciaopp?
 ]).
 %
-alias_paths([
-  ciao_docsrc = '.'
-]).
+% alias_paths([
+%   ciao_docsrc = '.'
+% ]).
 %
 manual('ciao', [main='reference/SETTINGS.pl']).
 manual('ciao_devel', [main='developers/SETTINGS.pl']).

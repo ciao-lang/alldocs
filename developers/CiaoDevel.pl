@@ -15,12 +15,8 @@
 % TODO: This file is not using the special acknowledgments section.
 % TODO: Replace 'credits' by 'editor'? (JFMC)
 
-:- doc(credits,   "@bf{Edited by:}").
-:- doc(credits,   "The Ciao Development Team").
-:- doc(copyright, "The Ciao Development Team").
-
-%:- include(ciao_docsrc(common/'ClipAddress')).
-%:- include(ciao_docsrc(common/'Copyright')).
+:- doc(credits, "@bf{Edited by:}").
+:- doc(credits, "The Ciao Development Team").
 
 %% :- doc(bug,"Although the documentation is acceptable at this
 %%    point, we are still really in beta mode in this regard.").

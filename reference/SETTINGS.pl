@@ -254,8 +254,10 @@ docstr_datastructuresalgs :=
 docstr_stdlibs :=
 	'StdLibs'-[
 	  % Streams and I/O
-	  'stream_basic', % engine
-	  'io_basic', % engine
+          'streams'-[
+	    'stream_basic', % engine
+	    'io_basic' % engine
+          ],
 	  'stream_utils',
 	  % Read/write terms
 	  'tokenize',

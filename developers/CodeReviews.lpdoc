@@ -1,4 +1,4 @@
-This page describes the Ciao code review workflow using __Phabricator__
+This describes the Ciao code review workflow using __Phabricator__
 and __Arcanist__.
 
 # How to Submit Code for Review
@@ -205,39 +205,55 @@ The goal of the code reviewer is to identify:
 - Failure in automated tests.
 
 The following subsections describe the code reviewing actions with the
-Phabricator web-interface.
+Phabricator web interface and the Archanist commands.
 
 ## Pre-commit reviews with Differential
 
+### Checking out the Phabricator branch (e.g., D24) with the changes
+
+To try the new changes:
+
+- Do '`git checkout`' to the Diff point (or '`git checkout master`' if
+  you have most of the recent commits), and 
+  
+- create a local branch with '`arc patch D24,`'
+
+- compile, test, ... 
+
+(This branch can be deleted later with '`git branch -D arcpatch-D24`'.)
+
 ### Suggesting modifications
 
-- To try the new changes do '`git checkout`' to the Diff point
-  (or '`git checkout master`' if you have most of the recent commits), and
-  create a local branch with '`arc patch D24`'. This branch can be
-  deleted later with '`git branch -D arcpatch-D24`'.
+- To annotate the changes with inline comments got to Phabricator and
+  perform _click and drag_ on the respective line numbers.
 
-- To annotate the changes with inline comments perform _click and drag_
-  on the respective line numbers.
+- To request changes fill the text area at the bottom of the page in
+  Phabricator with instructions or extended comments, select _Request
+  Changes_ action from the drop-down list and hit the _Submit_ button.
 
-- To request changes fill the text area at the bottom of the page with
-  instructions or extended comments, select _Request Changes_ action
-  from the drop-down list and hit the _Submit_ button.
+### Updating the branch after changes 
+
+One cannot really update the branch with the patch: instead for each
+new update of a Diff the old patch branch should be deleted, and a
+fresh one created from the `master` branch, i.e.: 
+
+- Switch to master with '`git checkout master`'.
+
+- Delete the (now outdated) branch with '`git branch -D arcpatch-D24`'.
+
+- Check out the branch again (which now will contain the updates):  '`arc patch D24`'.
 
 Repeat the actions above until the changes look good.
 
-Please note that one cannot update the branch with the patch: for each
-new update of a Diff an old patch branch should be deleted, and a
-fresh one created from the `master` branch.
-
 ### Accepting Changes
 
-To accept changes select the _Accept Revision_ action from the
-drop-down list and hit the _Submit_ button.
+To accept changes select in Phabricator the _Accept Revision_ action
+from the drop-down list and hit the _Submit_ button.
 
 ## Post-commit reviews with Audit
 
 For the commits that were pushed/landed without prior review it is
-still possible to make a code review through the Phabricator's web
+still possible to make a code review through Phabricator's web
 interface:
 
 - from the main page navigate to the `Audit` section in the

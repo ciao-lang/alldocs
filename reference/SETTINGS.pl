@@ -105,6 +105,8 @@ docstr_assrtlang :=
 
 docstr_extendlang :=
 	'ExtendLang'-[
+          % "No-prelude"
+          'noprelude/noprelude_doc',
           % "Pure"
           'pure/pure_doc',
 	  % Higher order and interfaces

@@ -13,7 +13,7 @@ Unix-style systems (e.g., Linux, macOS, etc.) and Windows systems.
 
 We begin with the installation instructions in @ref{Installing Ciao
 from the source distribution} (or @ref{Installing Ciao from a Win32
-binary distribution}). The next sections assume that Ciao is already
+binary distribution}). The following sections assume that Ciao is already
 installed correctly on your system. It is a good idea to perform the
 tests in @ref{Checking for correct installation on Unix} (or
 @ref{Checking for correct installation on Win32}) to check that Ciao

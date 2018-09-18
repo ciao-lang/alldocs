@@ -6,7 +6,7 @@
 :- doc(subtitle, "A New Generation, Multi-Paradigm Programming Language and Environment").
 :- doc(subtitle, "(Including a State-of-the-Art ISO-Prolog)").
 
-:- doc(logo, 'ciao-shadow-64h').
+:- doc(logo, 'ciao-logo').
 
 :- doc(subtitle_extra,"REFERENCE MANUAL").
 :- doc(subtitle_extra,"@bf{The Ciao Documentation Series}").

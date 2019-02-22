@@ -33,7 +33,6 @@ doc_structure :=
 docstr_gettingstarted :=
 	'GettingStarted'-[
           'Install',
-	  'InstallWin32bin',
 	  'CommandLineUse',
 	  'EmacsUse',
 	  'Troubleshooting'

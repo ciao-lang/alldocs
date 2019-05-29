@@ -2,14 +2,14 @@
 
 - Keep line width less than 80 characters (if possible).
 
-- Do not have lines ending with spaces or tabs (trailing
+- Do not leave lines ending with spaces or tabs (trailing
   whitespace).
 
 - Any file should be ended by a new line.
 
 - Use spaces instead of tabulations.
 
-- Avoid predicates with same name but different arity.
+- Avoid predicates with the same name but different arity.
 
 - Use descriptive module names, specially in libraries (to avoid clash
   with user-defined modules, since module names are global).
@@ -24,14 +24,16 @@
   `<bundle>/bugs/Fixed`. Place at `<bundle>/bugs/Unclassified`
   potential bugs whose status may be unknown.
 
-- Make sure that you do proper usage of clause indexing (in Ciao it is done on
-  the first argument of predicates) and cuts (`!/0`), for the expected
-  instantiation modes for each predicate. Doing unnecessary backtracking and
-  leaving choice points can introduce nasty performance bugs that are hard to
-  debug.
+- Make sure that you make proper usage of clause indexing (in Ciao it is
+  done by default on the first argument of predicates) and cuts
+  (`!/0`), for the expected instantiation modes for each
+  predicate. Doing unnecessary backtracking and leaving choice points
+  can introduce nasty performance bugs that can be hard to debug.
+  Assertions can help in this task.
 
-- Understand algorithmic cost of operations (assert/consult is typically linear
-  in the size of terms, var-nonvar unification is typically constant time, etc.)
+- Understand the algorithmic cost of operations (e.g., assert/consult
+  is typically linear in the size of terms, var-nonvar unification is
+  typically constant time, etc.)
 
 # Coding style for C Code
 

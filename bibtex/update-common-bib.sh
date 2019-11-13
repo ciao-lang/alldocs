@@ -30,7 +30,7 @@ bib_origin="svn+ssh://cliplab.org/home/clip/SvnReps/bibtex"
 
 check_bib_origin() {
     if [ -x "$bib_origin_path" ]; then
-	return 0
+        return 0
     fi
     cat <<EOF
 Could not find a local copy of:

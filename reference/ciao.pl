@@ -25,9 +25,9 @@
 :- include(core_docsrc(common/'ClipAddress')).
 
 :- doc(copyright,"Copyright @copyright{} 1997-2011 Francisco Bueno,
-	Daniel Cabeza, Manuel Carro, Manuel Hermenegildo,
-	P. L@'{o}pez, and Germ@'{a}n Puebla
-	@include{FreeDocLicense.lpdoc}").
+    Daniel Cabeza, Manuel Carro, Manuel Hermenegildo,
+    P. L@'{o}pez, and Germ@'{a}n Puebla
+    @include{FreeDocLicense.lpdoc}").
 
 %% :- doc(bug,"Although the documentation is acceptable at this
 %%    point, we are still really in beta mode in this regard.").

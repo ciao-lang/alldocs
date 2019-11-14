@@ -8,16 +8,16 @@ output_name := 'ciao_devel'.
 
 doc_structure :=
     'CiaoDevel'-[
-        'ReportingBugs',
-	'CodingStyle',
-        'GitWorkflow',
-	'TestChanges',
-	'CodeReviews',
-	'NewRelease',
-	%
-        'CiaoBiblio'
-	%
-	% TODO: Other (low-level) docs: INDEV/internals-18.tex, PortingNewPlatforms
+    'ReportingBugs',
+    'CodingStyle',
+    'GitWorkflow',
+    'TestChanges',
+    'CodeReviews',
+    'NewRelease',
+    %
+    'CiaoBiblio'
+    %
+    % TODO: Other (low-level) docs: INDEV/internals-18.tex, PortingNewPlatforms
     ].
 
 %doc_mainopts := no_patches.

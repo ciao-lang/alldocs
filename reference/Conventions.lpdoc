@@ -110,7 +110,7 @@ without affecting other modules.
 
 @subsection{Operators}
 
-An @em{operator} is a functor (or predicate name) which has been declared
+An @concept{operator} is a functor (or predicate name) which has been declared
 as such, thus allowing its use in a prefix, infix, or suffix fashion,
 instead of the standard procedure-like fashion. E.g., declaring @tt{+}
 as an infix operator allows writing @tt{X+Y} instead of @tt{'+'(X,Y)}

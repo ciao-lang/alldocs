@@ -66,6 +66,7 @@ docstr_utils :=
 
 docstr_basiclang :=
     'BasicLang'-[% (Code organization)
+      'Conventions', % (reference)
       'modules', % engine
       'bundles_doc', % engine
       'packages', % engine

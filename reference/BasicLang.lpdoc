@@ -2,17 +2,17 @@ This part documents the @index{Ciao basic language}. It covers the
 basic language concepts, constructs, and some predefined predicates
 and declarations that, unless stated otherwise, are available by
 default every Ciao program as defined in the @lib{prelude} package.
+However, it is also possible to avoid loading this @lib{prelude}
+package, on a per module basis, by using some special packages (see
+@lib{noprelude}, @lib{pure}).
 
 Most of these basic predicates are contained in the @tt{engine}
-modules. The rest of the standard library predicates, including the
-packages that provide most of the @concept{ISO-Prolog builtins}, are
-documented in subsequent parts.
+library modules.
 
-Additionally, this @lib{prelude} package can be omitted per module when
-some special packages are used (see @lib{noprelude}, @lib{pure}).
+The rest of the standard library predicates, including both the
+packages that provide @comment{most of} the @concept{ISO-Prolog
+builtins}, the other traditional Prolog builtins, and the many
+@concept{language extensions} of Ciao beyond Prolog are documented in
+subsequent parts.
 
-@section{Syntax terminology and notational conventions}
-@cindex{notation}
-
-@include{Conventions.lpdoc}
 

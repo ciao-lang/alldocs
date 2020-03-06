@@ -63,7 +63,7 @@ constraint logic programming, multi-paradigm features (higher-order,
 functional notation, etc.), alternative search and evaluation
 strategies, concurrency (threads), distributed and parallel execution,
 foreign language interfaces, restrictions such as working with pure
-horn clauses [see @ref{PART IV - Ciao extensions}], as well as
+horn clauses [see @ref{PART IV - Language extensions}], as well as
 supporting standard ISO-Prolog [see @ref{PART V - Compatibility}].
 
 Ciao includes a collection of standard and additional libraries and

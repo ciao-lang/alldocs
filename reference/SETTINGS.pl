@@ -271,7 +271,7 @@ docstr_stdlibs :=
       'terms_io',
       % Message printing (internal)
       'messages_basic',
-      % Runtime system control and info
+      % Runtime system control and info, flags
       'runtime_control', % engine
       'system_info', % engine
       % Compiler

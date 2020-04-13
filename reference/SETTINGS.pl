@@ -167,6 +167,8 @@ docstr_extendlang :=
       'clpfd/clpfd_doc'-[
         'clpfd/clpfd_rt'
       ],
+      % Tabled execution
+      'tabling/tabling_doc',
       % Attributed variables (used by other extensions)
       ~docstr_attr,
       % Foreign interface to C

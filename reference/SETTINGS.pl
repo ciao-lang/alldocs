@@ -195,8 +195,7 @@ docstr_attr :=
 docstr_foreign :=
     'foreign_interface/foreign_interface_doc'-[
       'foreign_interface/foreign_interface_properties',
-      'foreign_compilation',
-      'foreign_interface/build_foreign_interface'
+      'foreign_compilation'
     ].
 
 % ---------------------------------------------------------------------------

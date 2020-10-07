@@ -1,0 +1,19 @@
+This is the documentation for GNU @apl{emacs} advanced functionalities, in which it is explained
+how to install, setup and use some of the most popular @apl{emacs} packages with Ciao support.
+The use of these packages is totally optional, but it may result helpful when using Ciao.
+
+@begin{description}
+
+@item{flycheck-ciao:} on-the-fly syntax, test and assertion checking.
+
+@item{company-ciao:} text completion framework.
+
+@end{description}
+
+To install any package, use @apl{emacs} built-in package manager (@em{package.el}). Be sure to have package list is refreshed so they can be installed (@key{ESC} @key{^X} package-refresh-contents @key{↵}).
+
+@begin{itemize}
+
+@item @key{ESC} @key{^X} package-install-file @key{↵} @em{*PACKAGE PATH*} @key{↵}
+
+@end{itemize}

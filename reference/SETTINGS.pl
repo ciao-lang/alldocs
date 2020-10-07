@@ -48,7 +48,8 @@ docstr_devenv :=
       'ciaoc',
       'ciao-shell',
       ~docstr_utils,
-      'CiaoMode'
+      'CiaoMode',
+      ~docstr_contrib_ciao_emacs
     ].
 
 % (those are part of the development environment)
@@ -60,6 +61,12 @@ docstr_utils :=
       % 'show_deps'?
       % 'get_deps',
       'pldiff'
+    ].
+
+docstr_contrib_ciao_emacs :=
+    'AdvCiaoEmacs' - [
+        'flycheck-ciao',
+        'company-ciao'
     ].
 
 % ---------------------------------------------------------------------------
@@ -370,6 +377,8 @@ docstr_pillow :=
       'pillow/json',
       'pillow/color_space'
     ].
+
+
 
 % ---------------------------------------------------------------------------
 

@@ -57,7 +57,7 @@
 
       @include{AboutCiao.lpdoc}
 
-   @section{ISO-Prolog compliance versus extensibility}
+   @section{ISO-Prolog compliance and extensibility}
    @cindex{iso-prolog, compliance}
    @cindex{extensibility}
 

@@ -1,6 +1,6 @@
 
 One of the innovative features of Ciao is that it has been designed to
-subsume @index{ISO-Prolog} (International Standard ISO/IEC 13211-1,
+subsume transparently @index{ISO-Prolog} (International Standard ISO/IEC 13211-1,
 PROLOG: Part 1--General Core @cite{iso-prolog}), while at the same
 time extending it in many important ways. The intention is to ensure
 that all ISO-compliant Prolog programs run correctly under Ciao. At
@@ -19,16 +19,20 @@ In order to aid programmers who wish to write standard-compliant
 programs, library predicates that correspond to those in the
 ISO-Prolog standard are marked specially in the manuals, and
 differences between the Ciao and the prescribed ISO-Prolog behaviours,
-if any, are commented appropriately. There is also an @ref{ISO-Prolog
-package} which makes the standard ISO-Prolog predicates available by
-default in the modules that load it.
+if any, are commented appropriately. There is also functionality (see
+@ref{ISO-Prolog package}) which makes the standard ISO-Prolog
+predicates available by default in the modules that use traditional
+module declarations or that load this package explicitly. Thus,
+ISO-compliance is active transparently for ported programs.
 
-The intention of the Ciao developers is to progressively complete the
-compliance of Ciao with the published parts of the ISO standard as
-well as with other reasonable extensions of the standard that may be
-published in the future.  However, since one of the design objectives
-of Ciao is to address some shortcomings of previous implementations of
-Prolog and logic programming in general, we also hope that some of the
-better ideas present in the system will make it eventually into 
-other systems and the standards. 
+The intention of the Ciao developers is to maintain and continuously
+improve the compliance of Ciao with the published parts of the ISO
+standard, with other reasonable extensions of the standard that may be
+published in the future, and with those features that the Prolog
+developer community agrees widely on.  At the same time, since one of
+the design objectives of Ciao is to address some shortcomings of
+previous implementations of Prolog and logic programming in general,
+we also encourage and work towards making some of the better ideas
+present in the system reach the standards and also be adopted by other
+systems.
 

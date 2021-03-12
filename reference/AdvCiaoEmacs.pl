@@ -2,7 +2,7 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"Advanced Ciao Emacs Functionalities").
+:- doc(title,"Advanced Ciao Emacs functionalities").
 
 :- doc(author,"Miguel Angel Sanchez Ordaz").
 

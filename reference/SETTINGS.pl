@@ -219,7 +219,7 @@ docstr_foreign :=
 docstr_compatprolog :=
     'CompatProlog'-[
       'classic/classic_doc'-['classic/classic_predicates'],
-      'iso/iso_doc',
+      'iso_strict/iso_strict_doc',
       'iso_char',
       'iso_misc',
       'iso_incomplete',

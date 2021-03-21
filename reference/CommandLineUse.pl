@@ -47,7 +47,7 @@
       in many different ways). Note that the use of @pred{compile/1}
       and @pred{consult/1} is discouraged in Ciao.
 
-      For example, you may want to type @tt{use_package(iso)} to
+      For example, you may want to type @tt{use_package(iso_strict)} to
       ensure Ciao has loaded all the ISO builtins (whether this is
       done by default or not depends on your @file{.ciaorc} file).  Do
       not worry about any ``module already in executable'' messages

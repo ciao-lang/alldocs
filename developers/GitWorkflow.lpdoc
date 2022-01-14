@@ -146,7 +146,7 @@ considers the conflict has been resolved in this files, even if there is
 still mark in conflict in the head.
 \end{alert}
 
-## Q: What do I do after resolving a merge conflict ?
+## Q: What do I do after resolving a merge conflict?
 
 Before committing your merge (even if there is no conflict), you
 should verify that everything is going well. You should compile the
@@ -156,3 +156,27 @@ master. Also run the tests.
 
 If you do something else that just resolving syntactical conflicts,
 write details about those changes in the merge commit message.
+
+## Q: How do I rebase locally before a merge?
+
+`branch` is the branch to be rebased and `target` is the target
+branch (usually `master`).
+
+\begin{alert}
+**Warning:** This process rewrites history, so **do not run it**
+unless you are sure no one else is using your branch and there are no
+branches starting at your branch. `git fetch origin target; git merge
+origin/target` is a less preferred alternative to this process.
+\end{alert}
+
+1. Make sure the current branch corresponds to the branch you want to
+   rebase: `git checkout branch`.
+2. Fetch upstream changes: `git fetch origin target`.
+3. As we squash commits on merge anyway, we can do so when rebasing
+   onto `target` too to reduce the number of conflicts to handle: `git
+   rebase --autostash -i origin/target` (`pick` first and `fixup`
+   rest).
+4. In order to allow the repository administrators to modify the
+   commit message in GitLab, add an empty commit to the branch: `git
+   commit --allow-empty`.
+5. Push changes: `git push -v --force-with-lease origin branch`

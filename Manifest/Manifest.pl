@@ -1,7 +1,7 @@
 :- bundle(alldocs).
 % General Ciao documentation
 % (manuals and tutorials covering main bundles)
-version('1.21.0'). % (same as 'core')
+version('1.22.0'). % (same as 'core')
 depends([
   core,
   lpdoc,

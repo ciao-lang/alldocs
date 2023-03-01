@@ -148,7 +148,7 @@ docstr_extendlang :=
       'lazy/lazy_doc'-[
         'lazy/lazy_lib'
       ],
-      'bf/bf_doc',
+      'sr/bf_doc',
       'id/id_doc',
       % Other
       'odd', % setarg/3, undo/1 % TODO: they should not be in the same module

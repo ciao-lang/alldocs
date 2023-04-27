@@ -111,6 +111,7 @@ docstr_assrtlang :=
           'assertions/native_props_cost_doc'
       ],
       %
+      'modes/modes_doc',
       'isomodes/isomodes_doc',
       'basicmodes/basicmodes_doc',
       %

@@ -79,9 +79,8 @@
    relevant data:
 
 @noindent
-@begin{verbatim}
-@includeverbatim{CiaoReference.lpdoc}
-@end{verbatim}
+
+@includecode{CiaoReference.lpdoc}
 
    @section{Acknowledgments} 
    @cindex{acknowledgments}

@@ -11,17 +11,17 @@ combination.
 If the (freely available) @apl{emacs} editor/environment is not
 installed in your system, we highly recommend that you also install it
 at this point (there are instructions for where to find @apl{emacs}
-and how to install it in the Ciao installation instructions).  After
-having done this you can try for example the following things:
+and how to install it in the Ciao installation instructions).  Once
+@apl{emacs} is installed, after starting it (typing @tt{emacs}) the
+following should work:
+
+@include{EmacsTesting.lpdoc} 
+
+If these things do not work, the system or emacs may not be installed
+properly. After having done this you can try for example the following
+things:
 
 @begin{itemize}
-
-@item A few basic things: 
-
-      @include{EmacsTesting.lpdoc} 
-
-      (if these things do not work the system or emacs may not be
-      installed properly).
 
 @item You can go to the location of most of the errors that may be
       reported during compilation by typing @key{^C} @key{`}.

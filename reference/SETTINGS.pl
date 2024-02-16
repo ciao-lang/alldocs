@@ -412,5 +412,5 @@ doc_compopts := no_isoline|no_engmods|propmods|no_changelog|no_propuses|no_bugs.
 bibfile := ~ciao_bibfile.
 
 % TODO: port this manual
-allow_markdown := no.
+allow_markdown := yes.
 syntax_highlight := no.

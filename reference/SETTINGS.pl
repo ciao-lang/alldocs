@@ -4,6 +4,7 @@
 
 output_name := 'ciao'.
 
+filepath := at_bundle(core, '..'). % (for INSTALLATION.md)
 filepath := at_bundle(core, 'doc/common').
 filepath := at_bundle(core, 'shell').
 filepath := at_bundle(core, 'ciaoc').

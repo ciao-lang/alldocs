@@ -10,7 +10,10 @@
 :- doc(author,"Jose F. Morales").
 :- doc(author,"Manuel Hermenegildo").
 
-:- doc(module,"@include{InstallCiao.lpdoc}"). 
+:- doc(module,"
+@include{INSTALLATION.md}
+@include{InstallCiaoAdv.md}
+"). 
 
 
 

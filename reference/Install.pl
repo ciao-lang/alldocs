@@ -3,11 +3,11 @@
 
 :- doc(filetype, documentation).
 
-:- doc(title,"Installing Ciao from the source distribution").
+:- doc(title,"Installing Ciao").
 
+:- doc(author,"Jose F. Morales").
 :- doc(author,"Manuel Carro").
 :- doc(author,"Daniel Cabeza").
-:- doc(author,"Jose F. Morales").
 :- doc(author,"Manuel Hermenegildo").
 
 :- doc(module,"

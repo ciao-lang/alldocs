@@ -92,6 +92,4 @@
 %% --------------------------------------------------------------------------- 
 
 :- doc(version_maintenance,dir('../../core/Manifest')).
-:- include(core_docsrc('CHANGELOG')).
-
-
+:- doc(module, "@include{../../CHANGELOG.md}").

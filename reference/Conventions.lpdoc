@@ -112,10 +112,10 @@ keyword 'DECLARATION'.
 In Ciao users can define (and document) new declarations. New
 declarations are typically useful when defining extensions to the
 language (which in Ciao are called packages). Such extensions are
-often implemented as @concept{expansions} (see @ref{Extending the
-syntax}). There are many such extensions in Ciao. The @lib{functions}
+often implemented as @concept{expansions} (see @ref{Packages and 
+language extension}). There are many such extensions in Ciao. The @lib{fsyntax}
 library, which provides fuctional syntax, is an example. The fact that
-in Ciao expansions are local to modules (as operators, see below)
+expansions in Ciao are local to modules (as operators, see below)
 makes it possible to use a certain language extension in a 
 module without affecting other modules.
 

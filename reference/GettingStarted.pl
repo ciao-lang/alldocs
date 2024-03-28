@@ -10,8 +10,8 @@
 
 This part guides you through some very basic first steps with Ciao.
 
-We begin with the installation instructions in @ref{Installing Ciao
-from the source distribution}. The following sections assume that Ciao
+We begin with the installation instructions in @ref{Installing Ciao}.
+The following sections assume that Ciao
 is already installed correctly on your system. It is a good idea to
 perform the tests in @ref{Checking for correct installation} to check
 that Ciao is installed correctly (these are the same tests that you
@@ -24,7 +24,10 @@ the command line}. We strongly recommend reading also @ref{An
 introduction to the Ciao emacs environment} for the basics on using
 Ciao under @apl{emacs}, which is a much simpler and much more powerful
 way of developing Ciao programs, and has the advantage of offering an
-almost identical environment across different operating systems.
+almost identical environment across different operating systems. Note
+that there are other IDEs well supported, such as Visual Studio
+Code. Finally, you can try out Ciao running locally in your browser
+without installation with the Ciao Prolog Playground.
 
 For any problem during the installation or use of Ciao, please refer
 to @ref{Troubleshooting} @cindex{troubleshooting} for common issues

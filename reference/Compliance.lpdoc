@@ -20,10 +20,13 @@ programs, library predicates that correspond to those in the
 ISO-Prolog standard are marked specially in the manuals, and
 differences between the Ciao and the prescribed ISO-Prolog behaviours,
 if any, are commented appropriately. There is also functionality (see
-@ref{ISO-Prolog package}) which makes the standard ISO-Prolog
-predicates available by default in the modules that use traditional
-module declarations or that load this package explicitly. Thus,
-ISO-compliance is active transparently for ported programs.
+@ref{Classic Prolog}) which makes the ISO-Prolog standard predicates
+and other classical Prolog predicates available by default in the
+modules that use traditional @decl{module/2} declarations or that load
+the @lib{classic} package explicitly.  This mode is thus active
+transparently for traditional Prolog programs.  In addtion, the
+@ref{Stricter ISO-Prolog package}, @lib{iso_strict}, supports purer
+ISO compliance.
 
 The intention of the Ciao developers is to maintain and continuously
 improve the compliance of Ciao with the published parts of the ISO

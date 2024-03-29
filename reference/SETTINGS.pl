@@ -213,7 +213,8 @@ docstr_attr :=
 docstr_foreign :=
     'foreign_interface/foreign_interface_doc'-[
       'foreign_interface/foreign_interface_properties',
-      'foreign_compilation'
+      'foreign_compilation',
+      'compiler/build_foreign_interface' % Referred to in foreign_interface_doc
     ].
 
 % ---------------------------------------------------------------------------
@@ -300,7 +301,8 @@ docstr_stdlibs :=
       % OS
       'system',
       'pathnames',
-      'process/process'-['process/process_channel']
+      'process/process'-['process/process_channel'],
+      'logged_process'
      ].
 
 % ---------------------------------------------------------------------------
@@ -415,3 +417,6 @@ bibfile := ~ciao_bibfile.
 % TODO: port this manual
 allow_markdown := yes.
 syntax_highlight := no.
+
+% For debugging
+% verbosity := full

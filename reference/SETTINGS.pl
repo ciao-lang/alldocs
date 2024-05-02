@@ -97,32 +97,40 @@ docstr_basiclang :=
 % TODO: duplicated in bndls/ciaopp/doc/reference/SETTINGS.pl
 docstr_assrtlang :=
     'AssrtLang'-[
-      'assertions/assertions_doc'-[
-        'assertions/assertions_props'
-      ],
-      'regtypes/regtypes_doc',
-      'basic_props', % engine
-      % props native to analyzers, in chapters
-      'assertions/native_props'-[
-          'assertions/native_props_shfrg_doc',
-          'assertions/native_props_nfdet_doc',
-          'assertions/native_props_cardinality_doc',
-          'assertions/native_props_exceptions_doc',
-          'assertions/native_props_sideff_doc',
-          'assertions/native_props_polyhedral_doc',
-          'assertions/native_props_cost_doc'
-      ],
-      %
-      'modes/modes_doc',
-      'isomodes/isomodes_doc',
-      'basicmodes/basicmodes_doc',
-      %
-      'doccomments/doccomments_doc',
-      %
-      % TODO: move to its own part?
-      'rtchecks/rtchecks_doc'
+        'assertions/assertions_doc'-[
+            'assertions/assertions_props'
+        ],
+        'regtypes/regtypes_doc',
+        'basic_props', % engine
+        % props native to analyzers, in chapters
+        'assertions/native_props'-[
+            'assertions/native_props_shfrg_doc',
+            'assertions/native_props_nfdet_doc',
+            'assertions/native_props_cardinality_doc',
+            'assertions/native_props_exceptions_doc',
+            'assertions/native_props_sideff_doc',
+            'assertions/native_props_polyhedral_doc',
+            'assertions/native_props_cost_doc'
+        ],
+        %
+        'modes/modes_doc',
+        'isomodes/isomodes_doc',
+        'basicmodes/basicmodes_doc',
+        %
+        'doccomments/doccomments_doc',
+        %
+        % TODO: move to its own part?
+        'rtchecks/rtchecks_doc',
+        % Unit tests
+        'unittest/unittest'-[
+            'unittest/unittest_props',
+            'unittestdecls_doc',
+            % 'unittest/unittest_utils',
+            'unittest/unittest_statistics',
+            'unittest/unittest_examples'
+        ]
     ].
-     
+
 % ---------------------------------------------------------------------------
 
 docstr_extendlang :=

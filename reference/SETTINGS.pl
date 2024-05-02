@@ -94,6 +94,7 @@ docstr_basiclang :=
 
 % ---------------------------------------------------------------------------
 
+% TODO: duplicated in bndls/ciaopp/doc/reference/SETTINGS.pl
 docstr_assrtlang :=
     'AssrtLang'-[
       'assertions/assertions_doc'-[
@@ -116,7 +117,10 @@ docstr_assrtlang :=
       'isomodes/isomodes_doc',
       'basicmodes/basicmodes_doc',
       %
-      'doccomments/doccomments_doc'
+      'doccomments/doccomments_doc',
+      %
+      % TODO: move to its own part?
+      'rtchecks/rtchecks_doc'
     ].
      
 % ---------------------------------------------------------------------------

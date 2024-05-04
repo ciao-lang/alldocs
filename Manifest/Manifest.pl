@@ -5,7 +5,7 @@ version('1.23.0'). % (same as 'core')
 depends([
   core,
   lpdoc,
-  ciaodbg_extra, % debugger, profiler, testing, etc.
+  % profilercc,
   ciao_emacs
   % ciaopp?
 ]).

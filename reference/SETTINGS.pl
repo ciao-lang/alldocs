@@ -94,7 +94,6 @@ docstr_basiclang :=
 
 % ---------------------------------------------------------------------------
 
-% TODO: duplicated in bndls/ciaopp/doc/reference/SETTINGS.pl
 docstr_assrtlang :=
     'AssrtLang'-[
         'assertions/assertions_doc'-[
@@ -116,10 +115,12 @@ docstr_assrtlang :=
         'modes/modes_doc',
         'isomodes/isomodes_doc',
         'basicmodes/basicmodes_doc',
+        'metaprops/meta_props', % Note: in lpdoc manual, review!
         %
         'doccomments/doccomments_doc',
-        %
+        % (Usage of assertions)
         % TODO: move to its own part?
+        % Runtime checks
         'rtchecks/rtchecks_doc',
         % Unit tests
         'unittest/unittest'-[
@@ -128,7 +129,14 @@ docstr_assrtlang :=
             % 'unittest/unittest_utils',
             'unittest/unittest_statistics',
             'unittest/unittest_examples'
-        ]
+        ],
+        % Compile time checks (use of assertions, program units,
+        % entries, not really covering the usage of CiaoPP)
+        % (NOTE: this was part of CiaoPP manual, moved here)
+        % TODO: add some quick info and refer to CiaoPP manual for
+        %   detailed info and usage
+        % TODO: change order? better integratation with rtchecks_doc?
+        debugging_in_ciaopp
     ].
 
 % ---------------------------------------------------------------------------

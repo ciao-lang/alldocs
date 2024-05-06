@@ -2,7 +2,7 @@
 
 :- doc(filetype, part).
 
-:- doc(title,"PART III - Assertions and its use").
+:- doc(title,"PART III - Assertions and their use").
 % Note: it was "Assertions and auto-documentation"
 
 :- doc(author, "The Ciao Development Team").

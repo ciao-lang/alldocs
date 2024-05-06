@@ -47,7 +47,7 @@ program manipulation and optimization. Ciao includes a robust module
 system @cite{ciao-modules-cl2000}, module-based automatic incremental
 compilation @cite{ciaoc-ws}, and modular global program analysis,
 debugging and optimization @cite{ciao-modules-analspec-ws}, based on a
-rich assertion language [see @ref{PART III - Assertions and its use}]
+rich assertion language [see @ref{PART III - Assertions and their use}]
 for declaring (optional) program properties (including types, modes,
 determinacy, etc.), which can be checked either statically or
 dynamically.  The program analysis, static debugging and optimization

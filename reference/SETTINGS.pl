@@ -45,6 +45,7 @@ docstr_devenv :=
     'DevEnv'-[
       'toplevel/toplevel_doc',
       'debugger/debugger_doc'-['debugger/debugger'],
+      'profile',
       'builder_doc',
       'ciaoc',
       'ciao-shell',

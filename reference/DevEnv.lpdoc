@@ -20,6 +20,12 @@ development environment. They include:
    @em{embeddable}, and it can be activated dynamically and
    conditionally while running executables.
 
+   @item{profiler:} which can be used to determine call counts, times,
+   etc. per predicate when executing a goal or an executable.  It is
+   not a standalone application but rather an engine functionality
+   that can be accessed from the @apl{ciaosh} top level or activated
+   for a given executable.
+
    @item{ciaoc:} the standalone compiler, which creates executables
    without having to enter the interactive top-level.
 

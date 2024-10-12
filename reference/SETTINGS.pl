@@ -389,6 +389,7 @@ docstr_extralibs :=
       'file_locks/file_locks',
       'symfnames/symfnames',
       'opendoc',
+      'openpg',
       'emacs/emacs'
     ].
 

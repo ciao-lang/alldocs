@@ -275,7 +275,7 @@ docstr_datastructuresalgs :=
       % Maps
       'dict',
       'vndict',
-      'arrays_log',
+      'logarray',
       'assoc',
       'keys', % TODO: document/merge
       % Graphs

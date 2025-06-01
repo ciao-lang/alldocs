@@ -421,7 +421,6 @@ docstr_pillow :=
 
 %   'metatypes'
 %   'meta_props'
-%   'loops'
 %   'parse_spec'
 %   'prompt'
 %   'cmdline'
